@@ -25,6 +25,7 @@
 			<Item Name="hamamatsuParameters.vi" Type="VI" URL="../hamamatsuParameters.vi"/>
 			<Item Name="hamamatsuRun.vi" Type="VI" URL="../hamamatsuRun.vi"/>
 			<Item Name="laserControl.vi" Type="VI" URL="../laserControl.vi"/>
+			<Item Name="opencvSegment.vi" Type="VI" URL="../opencvSegment.vi"/>
 			<Item Name="piezoRun.vi" Type="VI" URL="../piezoRun.vi"/>
 			<Item Name="stageMoveTo.vi" Type="VI" URL="../stageMoveTo.vi"/>
 		</Item>
@@ -329,6 +330,7 @@
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
 				<Item Name="IMAQ ArrayToImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToImage"/>
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
@@ -387,6 +389,7 @@
 			<Item Name="tmcamcon.dll" Type="Document" URL="tmcamcon.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="wormUtilities.dll" Type="Document" URL="../dll/wormUtilities/x64/Release/wormUtilities.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -1,0 +1,9 @@
+﻿  wormUtilities.cpp
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\header.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\header.h(10): error C2146: syntax error: missing ';' before identifier 'sumarray'
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\header.h(10): error C2065: 'int32t': undeclared identifier
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\header.h(10): error C2146: syntax error: missing ')' before identifier 'a'
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\wormutilities.cpp(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\wormutilities.cpp(9): error C2146: syntax error: missing ';' before identifier 'sumarray'
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\wormutilities.cpp(9): error C2143: syntax error: missing ';' before '{'
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\wormutilities.cpp(9): error C2447: '{': missing function header (old-style formal list?)
