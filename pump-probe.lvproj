@@ -78,12 +78,12 @@
 			<Item Name="piezo2GeneratePositions.vi" Type="VI" URL="../piezo2GeneratePositions.vi"/>
 		</Item>
 		<Item Name="variables" Type="Folder">
-			<Property Name="NI.SortType" Type="Int">0</Property>
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="globalDevices.vi" Type="VI" URL="../globalDevices.vi"/>
 			<Item Name="globalUtilities.vi" Type="VI" URL="../globalUtilities.vi"/>
+			<Item Name="sharedVariables.lvlib" Type="Library" URL="../sharedVariables.lvlib"/>
 			<Item Name="hamamatsuFrame.ctl" Type="VI" URL="../hamamatsuFrame.ctl"/>
 			<Item Name="objectivesRegistrationRaw.ctl" Type="VI" URL="../objectivesRegistrationRaw.ctl"/>
-			<Item Name="sharedVariables.lvlib" Type="Library" URL="../sharedVariables.lvlib"/>
 			<Item Name="xboxDataFull.ctl" Type="VI" URL="../xboxDataFull.ctl"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">

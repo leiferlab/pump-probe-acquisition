@@ -145,6 +145,8 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>
       </OmitFramePointers>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
