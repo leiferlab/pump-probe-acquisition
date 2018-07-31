@@ -1,8 +1,8 @@
 ﻿  wormUtilities.cpp
      Creating library C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.lib and object C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.exp
   Generating code
-  1 of 38 functions ( 2.6%) were compiled, the rest were copied from previous compilation.
+  1 of 51 functions ( 2.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    4 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   wormUtilities.vcxproj -> C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.dll

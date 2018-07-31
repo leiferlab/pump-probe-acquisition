@@ -2,12 +2,15 @@
 <Project Type="Project" LVVersion="17008000">
 	<Property Name="varPersistentID:{27D7165F-9870-4C8B-8934-8F968FFF7DF8}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/piezoPosition</Property>
 	<Property Name="varPersistentID:{2FA5E28E-19A5-4ACD-9D16-EFF6C0AE9C16}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/hamamatsuFrameCounter</Property>
+	<Property Name="varPersistentID:{35C106AC-94FD-47D5-8F64-C7EC4992A7BE}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/piezoPositionDerivative</Property>
 	<Property Name="varPersistentID:{47A20767-6077-4973-A62D-B2CC9034B3F7}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/objectivesRegistrationRaw</Property>
 	<Property Name="varPersistentID:{71594551-FD1D-42D2-BF68-A1C17D5A8514}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCurrent</Property>
 	<Property Name="varPersistentID:{771C3BE6-CC7C-425E-B1BA-B9C3EBC18D5A}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCount</Property>
 	<Property Name="varPersistentID:{8570C9C2-73A4-44A7-85E5-1D73400556A4}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameSaved</Property>
+	<Property Name="varPersistentID:{8DC4A730-48C5-4E76-9A26-8D3502577EB8}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/volumeFirstFrame</Property>
 	<Property Name="varPersistentID:{A62930A4-0BFD-4E66-963A-92FAAE86BEA7}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameSum</Property>
 	<Property Name="varPersistentID:{B815CFBA-DE67-4C56-AC3D-A110544ED643}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/xboxDataFull</Property>
+	<Property Name="varPersistentID:{C39C69E6-79C9-412E-84A0-AED645BD8464}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameAvailable</Property>
 	<Property Name="varPersistentID:{C921F586-F4CC-41F1-B802-1C18C9987717}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCurrentIndex</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -20,12 +23,18 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="basic and test" Type="Folder">
+			<Item Name="acquireVolumeAndFindNeurons.vi" Type="VI" URL="../acquireVolumeAndFindNeurons.vi"/>
 			<Item Name="counterTest.vi" Type="VI" URL="../counterTest.vi"/>
 			<Item Name="cwlaserControl.vi" Type="VI" URL="../cwlaserControl.vi"/>
+			<Item Name="filterWheelTest.vi" Type="VI" URL="../filterWheelTest.vi"/>
+			<Item Name="galvoRun.vi" Type="VI" URL="../galvoRun.vi"/>
 			<Item Name="hamamatsuParameters.vi" Type="VI" URL="../hamamatsuParameters.vi"/>
 			<Item Name="hamamatsuRun.vi" Type="VI" URL="../hamamatsuRun.vi"/>
+			<Item Name="hamamatsuRunSingleVolumes.vi" Type="VI" URL="../hamamatsuRunSingleVolumes.vi"/>
 			<Item Name="laserControl.vi" Type="VI" URL="../laserControl.vi"/>
-			<Item Name="opencvSegment.vi" Type="VI" URL="../opencvSegment.vi"/>
+			<Item Name="opencvFindPeakTest.vi" Type="VI" URL="../opencvFindPeakTest.vi"/>
+			<Item Name="opencvSegmentMultipleTest.vi" Type="VI" URL="../opencvSegmentMultipleTest.vi"/>
+			<Item Name="opencvSegmentTest.vi" Type="VI" URL="../opencvSegmentTest.vi"/>
 			<Item Name="piezoRun.vi" Type="VI" URL="../piezoRun.vi"/>
 			<Item Name="stageMoveTo.vi" Type="VI" URL="../stageMoveTo.vi"/>
 		</Item>
@@ -40,14 +49,21 @@
 				<Item Name="cwlaserOnOff.vi" Type="VI" URL="../cwlaserOnOff.vi"/>
 				<Item Name="cwlaserOpen.vi" Type="VI" URL="../cwlaserOpen.vi"/>
 				<Item Name="cwlaserSetPower.vi" Type="VI" URL="../cwlaserSetPower.vi"/>
+				<Item Name="daqCreateFile.vi" Type="VI" URL="../daqCreateFile.vi"/>
 				<Item Name="daqRead.vi" Type="VI" URL="../daqRead.vi"/>
+				<Item Name="filterWheelClose.vi" Type="VI" URL="../filterWheelClose.vi"/>
+				<Item Name="filterWheelMove.vi" Type="VI" URL="../filterWheelMove.vi"/>
 				<Item Name="filterWheelOpen.vi" Type="VI" URL="../filterWheelOpen.vi"/>
+				<Item Name="galvoWriteClose.vi" Type="VI" URL="../galvoWriteClose.vi"/>
+				<Item Name="galvoWriteOpen.vi" Type="VI" URL="../galvoWriteOpen.vi"/>
+				<Item Name="galvoWriteWrite.vi" Type="VI" URL="../galvoWriteWrite.vi"/>
 				<Item Name="hamamatsuClose.vi" Type="VI" URL="../hamamatsuClose.vi"/>
 				<Item Name="hamamatsuFrameCounterClose.vi" Type="VI" URL="../hamamatsuFrameCounterClose.vi"/>
 				<Item Name="hamamatsuFrameCounterOpen.vi" Type="VI" URL="../hamamatsuFrameCounterOpen.vi"/>
 				<Item Name="hamamatsuOpen.vi" Type="VI" URL="../hamamatsuOpen.vi"/>
 				<Item Name="hamamatsuRead.vi" Type="VI" URL="../hamamatsuRead.vi"/>
 				<Item Name="hamamatsuReadAsync.vi" Type="VI" URL="../hamamatsuReadAsync.vi"/>
+				<Item Name="hamamatsuReadIndexesOnly.vi" Type="VI" URL="../hamamatsuReadIndexesOnly.vi"/>
 				<Item Name="hamamatsuReadToRAM.vi" Type="VI" URL="../hamamatsuReadToRAM.vi"/>
 				<Item Name="hamamatsuSetStartTrigger.vi" Type="VI" URL="../hamamatsuSetStartTrigger.vi"/>
 				<Item Name="pharosClose.vi" Type="VI" URL="../pharosClose.vi"/>
@@ -61,6 +77,7 @@
 				<Item Name="piezoWriteStart.vi" Type="VI" URL="../piezoWriteStart.vi"/>
 				<Item Name="piezoWriteWrite.vi" Type="VI" URL="../piezoWriteWrite.vi"/>
 				<Item Name="piezoWriteWriteFuncGen.vi" Type="VI" URL="../piezoWriteWriteFuncGen.vi"/>
+				<Item Name="piezoWriteWriteSingleVolume.vi" Type="VI" URL="../piezoWriteWriteSingleVolume.vi"/>
 				<Item Name="stageClose.vi" Type="VI" URL="../stageClose.vi"/>
 				<Item Name="stageMove.vi" Type="VI" URL="../stageMove.vi"/>
 				<Item Name="stageOpen.vi" Type="VI" URL="../stageOpen.vi"/>
@@ -68,14 +85,24 @@
 				<Item Name="xboxOpen.vi" Type="VI" URL="../xboxOpen.vi"/>
 				<Item Name="xboxRead.vi" Type="VI" URL="../xboxRead.vi"/>
 			</Item>
+			<Item Name="acquisitionFrameBrightness.vi" Type="VI" URL="../acquisitionFrameBrightness.vi"/>
+			<Item Name="acquisitionGetVolume.vi" Type="VI" URL="../acquisitionGetVolume.vi"/>
+			<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
+			<Item Name="acquisitionStartStop.vi" Type="VI" URL="../acquisitionStartStop.vi"/>
 			<Item Name="deleteFiles.vi" Type="VI" URL="../deleteFiles.vi"/>
 			<Item Name="galvoGeneratePositionsGrid.vi" Type="VI" URL="../galvoGeneratePositionsGrid.vi"/>
 			<Item Name="initFilename.vi" Type="VI" URL="../initFilename.vi"/>
 			<Item Name="initGeneralStop.vi" Type="VI" URL="../initGeneralStop.vi"/>
-			<Item Name="initSharedVariables.vi" Type="VI" URL="../initSharedVariables.vi"/>
+			<Item Name="initVariables.vi" Type="VI" URL="../initVariables.vi"/>
 			<Item Name="objectivesRegistrationMap.vi" Type="VI" URL="../objectivesRegistrationMap.vi"/>
+			<Item Name="opencvFindPeak.vi" Type="VI" URL="../opencvFindPeak.vi"/>
+			<Item Name="opencvSegment.vi" Type="VI" URL="../opencvSegment.vi"/>
+			<Item Name="opencvSegmentMultiple.vi" Type="VI" URL="../opencvSegmentMultiple.vi"/>
+			<Item Name="opencvSelectCandidateNeurons5Planes.vi" Type="VI" URL="../opencvSelectCandidateNeurons5Planes.vi"/>
 			<Item Name="pharosGenerateTriggers.vi" Type="VI" URL="../pharosGenerateTriggers.vi"/>
 			<Item Name="piezo2GeneratePositions.vi" Type="VI" URL="../piezo2GeneratePositions.vi"/>
+			<Item Name="piezoGetPosFromFirstFrameCount.vi" Type="VI" URL="../piezoGetPosFromFirstFrameCount.vi"/>
+			<Item Name="piezoGetPosFromFrameCount.vi" Type="VI" URL="../piezoGetPosFromFrameCount.vi"/>
 		</Item>
 		<Item Name="variables" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -331,13 +358,6 @@
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
-				<Item Name="Image Type" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Image Type"/>
-				<Item Name="IMAQ ArrayToImage" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ArrayToImage"/>
-				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
-				<Item Name="IMAQ Dispose" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Dispose"/>
-				<Item Name="IMAQ Image.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Image.ctl"/>
-				<Item Name="IMAQ ImageToArray" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ ImageToArray"/>
-				<Item Name="IMAQ Rounding Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/IMAQ Rounding Mode.ctl"/>
 				<Item Name="Initialize Joystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Initialize Joystick.vi"/>
 				<Item Name="joystickAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/joystickAcquire.vi"/>
 				<Item Name="keyboardAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/keyboardAcquire.vi"/>
@@ -349,7 +369,6 @@
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Number To Enum.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Number To Enum.vim"/>
 				<Item Name="Query Input Devices.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Query Input Devices.vi"/>
@@ -368,22 +387,11 @@
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
-				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
-				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
-				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
-				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
-				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="libximc.lvlib" Type="Library" URL="../Stage/ximcLVx64/libximc.lvlib"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="tmcamcon.dll" Type="Document" URL="tmcamcon.dll">
