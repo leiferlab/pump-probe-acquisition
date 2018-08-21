@@ -20,8 +20,24 @@ extern "C" WORMUTILITIES_API void segment_check2dcandidates_5planes(
 	float ArrB0[], float ArrB1[], float ArrB2[],
 	float ArrB3[], float ArrB4[], signed __int32 sizeBx, signed __int32 sizeBy,
 	unsigned __int16 NeuronXYin[], unsigned __int16 NeuronNin,
-	unsigned __int16 NeuronXYout[], unsigned __int16 &NeuronNout);
+	unsigned __int16 NeuronXYout[], unsigned __int16 &NeuronNout);             
 
 extern "C" WORMUTILITIES_API void find_peak(unsigned __int16 ImgIn[],
 	signed __int32 sizex, signed __int32 sizey, 
 	double blur, signed __int32 &maxLocX, signed __int32 &maxLocY);
+
+extern "C" WORMUTILITIES_API void gmmreg_transformation(
+	int dim, double param0[],
+	int nctrlpts, double coordCtrlPts[],
+	int npts, double coord[],
+	int nout, double out[],
+	double normParams[], double denormParams[]);
+
+extern "C" WORMUTILITIES_API void gmmreg_registration(
+	int dim, double param0[], double lambda[],
+	int nscale, double scale[],
+	int nctrlpts, double coordCtrlPts[],
+	int npts, double coord[],
+	int nptsScene, double coordScene[],
+	int nOut, double out[],
+	double normParams[], double denormParams[]);

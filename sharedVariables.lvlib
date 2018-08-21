@@ -11,6 +11,15 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!""01!!!"=!A!!!!!!#!!V!!Q!(4H6N:8*J9Q!=1%!!!@````]!!!Z"=H*B?3"P:C"*&lt;H1T-A!!!1!"!!!!!!!!!!!!!!!!</Property>
 	</Item>
+	<Item Name="frameBackground" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Global</Property>
+		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="type" Type="Str">Global</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!`/Q!!!"=!A!!!!!!#!!V!"A!(4H6N:8*J9Q!71%!!!P``````````!!!&amp;:H*B&lt;75!!1!"!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
 	<Item Name="frameCount" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global</Property>
 		<Property Name="Global:EnableTimestamp" Type="Str">False</Property>
@@ -72,7 +81,7 @@
 		<Property Name="Network:UseBuffering" Type="Str">False</Property>
 		<Property Name="numTypedefs" Type="UInt">0</Property>
 		<Property Name="type" Type="Str">Global</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"44Q!!!"=!A!!!!!!#!!V!#A!(4H6N:8*J9Q!K1%!!!P``````````!!!:&lt;W*K:7.U;8:F=V*F:WFT&gt;(*B&gt;'FP&lt;F*B&gt;Q!"!!%!!!!!!!!!!!!!!!!!!!!!</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"&lt;6Q!!!"=!A!!!!!!#!!V!#A!(4H6N:8*J9Q!O1%!!!````````````````Q!!'7^C;G6D&gt;'FW:8.3:7&gt;J=X2S982J&lt;WZ398=!!1!"!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
 	<Item Name="piezoPosition" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Global</Property>

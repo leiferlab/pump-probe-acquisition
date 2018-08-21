@@ -8,6 +8,7 @@
 	<Property Name="varPersistentID:{771C3BE6-CC7C-425E-B1BA-B9C3EBC18D5A}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCount</Property>
 	<Property Name="varPersistentID:{8570C9C2-73A4-44A7-85E5-1D73400556A4}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameSaved</Property>
 	<Property Name="varPersistentID:{8DC4A730-48C5-4E76-9A26-8D3502577EB8}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/volumeFirstFrame</Property>
+	<Property Name="varPersistentID:{955727B8-AB75-4F68-B146-3A15D53B48E5}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameBackground</Property>
 	<Property Name="varPersistentID:{A62930A4-0BFD-4E66-963A-92FAAE86BEA7}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameSum</Property>
 	<Property Name="varPersistentID:{B815CFBA-DE67-4C56-AC3D-A110544ED643}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/xboxDataFull</Property>
 	<Property Name="varPersistentID:{C39C69E6-79C9-412E-84A0-AED645BD8464}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameAvailable</Property>
@@ -23,20 +24,27 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="basic and test" Type="Folder">
-			<Item Name="acquireVolumeAndFindNeurons.vi" Type="VI" URL="../acquireVolumeAndFindNeurons.vi"/>
-			<Item Name="counterTest.vi" Type="VI" URL="../counterTest.vi"/>
-			<Item Name="cwlaserControl.vi" Type="VI" URL="../cwlaserControl.vi"/>
-			<Item Name="filterWheelTest.vi" Type="VI" URL="../filterWheelTest.vi"/>
-			<Item Name="galvoRun.vi" Type="VI" URL="../galvoRun.vi"/>
-			<Item Name="hamamatsuParameters.vi" Type="VI" URL="../hamamatsuParameters.vi"/>
-			<Item Name="hamamatsuRun.vi" Type="VI" URL="../hamamatsuRun.vi"/>
-			<Item Name="hamamatsuRunSingleVolumes.vi" Type="VI" URL="../hamamatsuRunSingleVolumes.vi"/>
+			<Item Name="test" Type="Folder">
+				<Item Name="counterTest.vi" Type="VI" URL="../counterTest.vi"/>
+				<Item Name="filterWheelTest.vi" Type="VI" URL="../filterWheelTest.vi"/>
+				<Item Name="gmmregRegistrationTest.vi" Type="VI" URL="../gmmregRegistrationTest.vi"/>
+				<Item Name="gmmregRegistrationTestLowLevel.vi" Type="VI" URL="../gmmregRegistrationTestLowLevel.vi"/>
+				<Item Name="hamamatsuParameters.vi" Type="VI" URL="../hamamatsuParameters.vi"/>
+				<Item Name="hamamatsuRun.vi" Type="VI" URL="../hamamatsuRun.vi"/>
+				<Item Name="hamamatsuRunSingleVolumes.vi" Type="VI" URL="../hamamatsuRunSingleVolumes.vi"/>
+				<Item Name="opencvFindPeakTest.vi" Type="VI" URL="../opencvFindPeakTest.vi"/>
+				<Item Name="opencvSegmentMultipleTest.vi" Type="VI" URL="../opencvSegmentMultipleTest.vi"/>
+				<Item Name="opencvSegmentTest.vi" Type="VI" URL="../opencvSegmentTest.vi"/>
+			</Item>
+			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
+			<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
+			<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
+			<Item Name="galvo.vi" Type="VI" URL="../galvo.vi"/>
+			<Item Name="hamamatsuSaveBGFrame.vi" Type="VI" URL="../hamamatsuSaveBGFrame.vi"/>
 			<Item Name="laserControl.vi" Type="VI" URL="../laserControl.vi"/>
-			<Item Name="opencvFindPeakTest.vi" Type="VI" URL="../opencvFindPeakTest.vi"/>
-			<Item Name="opencvSegmentMultipleTest.vi" Type="VI" URL="../opencvSegmentMultipleTest.vi"/>
-			<Item Name="opencvSegmentTest.vi" Type="VI" URL="../opencvSegmentTest.vi"/>
-			<Item Name="piezoRun.vi" Type="VI" URL="../piezoRun.vi"/>
-			<Item Name="stageMoveTo.vi" Type="VI" URL="../stageMoveTo.vi"/>
+			<Item Name="piezo.vi" Type="VI" URL="../piezo.vi"/>
+			<Item Name="piezoHoldMidway.vi" Type="VI" URL="../piezoHoldMidway.vi"/>
+			<Item Name="stage.vi" Type="VI" URL="../stage.vi"/>
 		</Item>
 		<Item Name="main" Type="Folder">
 			<Item Name="main.vi" Type="VI" URL="../main.vi"/>
@@ -45,6 +53,12 @@
 		</Item>
 		<Item Name="subvi" Type="Folder">
 			<Item Name="subvi-devices" Type="Folder">
+				<Item Name="csuClose.vi" Type="VI" URL="../csuClose.vi"/>
+				<Item Name="csuCloseShutter.vi" Type="VI" URL="../csuCloseShutter.vi"/>
+				<Item Name="csuIO.vi" Type="VI" URL="../csuIO.vi"/>
+				<Item Name="csuOpen.vi" Type="VI" URL="../csuOpen.vi"/>
+				<Item Name="csuOpenShutter.vi" Type="VI" URL="../csuOpenShutter.vi"/>
+				<Item Name="csuShutterState.vi" Type="VI" URL="../csuShutterState.vi"/>
 				<Item Name="cwlaserClose.vi" Type="VI" URL="../cwlaserClose.vi"/>
 				<Item Name="cwlaserOnOff.vi" Type="VI" URL="../cwlaserOnOff.vi"/>
 				<Item Name="cwlaserOpen.vi" Type="VI" URL="../cwlaserOpen.vi"/>
@@ -85,20 +99,41 @@
 				<Item Name="xboxOpen.vi" Type="VI" URL="../xboxOpen.vi"/>
 				<Item Name="xboxRead.vi" Type="VI" URL="../xboxRead.vi"/>
 			</Item>
+			<Item Name="subvi-gmmreg" Type="Folder">
+				<Item Name="gmmregDefaultParameters.vi" Type="VI" URL="../gmmregDefaultParameters.vi"/>
+				<Item Name="gmmregRegistration.vi" Type="VI" URL="../gmmregRegistration.vi"/>
+				<Item Name="gmmregRegistrationLowLevel.vi" Type="VI" URL="../gmmregRegistrationLowLevel.vi"/>
+				<Item Name="gmmregTransform.vi" Type="VI" URL="../gmmregTransform.vi"/>
+				<Item Name="gmmregTransformLowLevel.vi" Type="VI" URL="../gmmregTransformLowLevel.vi"/>
+			</Item>
+			<Item Name="subvi-opencv" Type="Folder">
+				<Item Name="opencvFindPeak.vi" Type="VI" URL="../opencvFindPeak.vi"/>
+				<Item Name="opencvSegment.vi" Type="VI" URL="../opencvSegment.vi"/>
+				<Item Name="opencvSegmentConvertCoordinates-multiFrames.vi" Type="VI" URL="../opencvSegmentConvertCoordinates-multiFrames.vi"/>
+				<Item Name="opencvSegmentConvertCoordinates-singleFrame.vi" Type="VI" URL="../opencvSegmentConvertCoordinates-singleFrame.vi"/>
+				<Item Name="opencvSegmentConvertCoordinates.vi" Type="VI" URL="../opencvSegmentConvertCoordinates.vi"/>
+				<Item Name="opencvSegmentMultiple.vi" Type="VI" URL="../opencvSegmentMultiple.vi"/>
+				<Item Name="opencvSegmentVisualize.vi" Type="VI" URL="../opencvSegmentVisualize.vi"/>
+				<Item Name="opencvSelectCandidateNeurons5Planes.vi" Type="VI" URL="../opencvSelectCandidateNeurons5Planes.vi"/>
+			</Item>
+			<Item Name="acquisitionAcquireVolumeFindNeurons.vi" Type="VI" URL="../acquisitionAcquireVolumeFindNeurons.vi"/>
 			<Item Name="acquisitionFrameBrightness.vi" Type="VI" URL="../acquisitionFrameBrightness.vi"/>
+			<Item Name="acquisitionGetChannelsFromFrame.vi" Type="VI" URL="../acquisitionGetChannelsFromFrame.vi"/>
+			<Item Name="acquisitionGetChannelsFromFrames.vi" Type="VI" URL="../acquisitionGetChannelsFromFrames.vi"/>
 			<Item Name="acquisitionGetVolume.vi" Type="VI" URL="../acquisitionGetVolume.vi"/>
 			<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
 			<Item Name="acquisitionStartStop.vi" Type="VI" URL="../acquisitionStartStop.vi"/>
-			<Item Name="deleteFiles.vi" Type="VI" URL="../deleteFiles.vi"/>
+			<Item Name="acquisitionZProjection.vi" Type="VI" URL="../acquisitionZProjection.vi"/>
+			<Item Name="fileDelete.vi" Type="VI" URL="../fileDelete.vi"/>
+			<Item Name="fileObjectivesRegistrationLoad.vi" Type="VI" URL="../fileObjectivesRegistrationLoad.vi"/>
+			<Item Name="fileObjectivesRegistrationMostRecent.vi" Type="VI" URL="../fileObjectivesRegistrationMostRecent.vi"/>
+			<Item Name="fileObjectivesRegistrationSave.vi" Type="VI" URL="../fileObjectivesRegistrationSave.vi"/>
 			<Item Name="galvoGeneratePositionsGrid.vi" Type="VI" URL="../galvoGeneratePositionsGrid.vi"/>
 			<Item Name="initFilename.vi" Type="VI" URL="../initFilename.vi"/>
 			<Item Name="initGeneralStop.vi" Type="VI" URL="../initGeneralStop.vi"/>
 			<Item Name="initVariables.vi" Type="VI" URL="../initVariables.vi"/>
 			<Item Name="objectivesRegistrationMap.vi" Type="VI" URL="../objectivesRegistrationMap.vi"/>
-			<Item Name="opencvFindPeak.vi" Type="VI" URL="../opencvFindPeak.vi"/>
-			<Item Name="opencvSegment.vi" Type="VI" URL="../opencvSegment.vi"/>
-			<Item Name="opencvSegmentMultiple.vi" Type="VI" URL="../opencvSegmentMultiple.vi"/>
-			<Item Name="opencvSelectCandidateNeurons5Planes.vi" Type="VI" URL="../opencvSelectCandidateNeurons5Planes.vi"/>
+			<Item Name="optogeneticsTarget3D.vi" Type="VI" URL="../optogeneticsTarget3D.vi"/>
 			<Item Name="pharosGenerateTriggers.vi" Type="VI" URL="../pharosGenerateTriggers.vi"/>
 			<Item Name="piezo2GeneratePositions.vi" Type="VI" URL="../piezo2GeneratePositions.vi"/>
 			<Item Name="piezoGetPosFromFirstFrameCount.vi" Type="VI" URL="../piezoGetPosFromFirstFrameCount.vi"/>
@@ -139,10 +174,12 @@
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="Close Input Device.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Close Input Device.vi"/>
 				<Item Name="closeJoystick.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/closeJoystick.vi"/>
 				<Item Name="closeKeyboard.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/closeKeyboard.vi"/>
 				<Item Name="closeMouse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/closeMouse.vi"/>
+				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi"/>
@@ -349,6 +386,7 @@
 				<Item Name="errorList.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/errorList.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
@@ -371,7 +409,14 @@
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Number To Enum.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Number To Enum.vim"/>
+				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="Query Input Devices.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Query Input Devices.vi"/>
+				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Read Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (string).vi"/>
+				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
+				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
+				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -387,6 +432,11 @@
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
+				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="libximc.lvlib" Type="Library" URL="../Stage/ximcLVx64/libximc.lvlib"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
