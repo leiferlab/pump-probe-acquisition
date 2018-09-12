@@ -1,9 +1,12 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="17008000">
+	<Property Name="varPersistentID:{06410A8A-322E-4C7F-9759-54B31449323F}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/piezoStep</Property>
 	<Property Name="varPersistentID:{27D7165F-9870-4C8B-8934-8F968FFF7DF8}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/piezoPosition</Property>
 	<Property Name="varPersistentID:{2FA5E28E-19A5-4ACD-9D16-EFF6C0AE9C16}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/hamamatsuFrameCounter</Property>
 	<Property Name="varPersistentID:{35C106AC-94FD-47D5-8F64-C7EC4992A7BE}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/piezoPositionDerivative</Property>
 	<Property Name="varPersistentID:{47A20767-6077-4973-A62D-B2CC9034B3F7}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/objectivesRegistrationRaw</Property>
+	<Property Name="varPersistentID:{4B5EFDCB-34D9-40F3-B993-EB3070644509}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/fileBasename</Property>
+	<Property Name="varPersistentID:{4BBD1EB1-F10E-4A89-9906-A8669DB5ED8A}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameProcessedIndex</Property>
 	<Property Name="varPersistentID:{71594551-FD1D-42D2-BF68-A1C17D5A8514}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCurrent</Property>
 	<Property Name="varPersistentID:{771C3BE6-CC7C-425E-B1BA-B9C3EBC18D5A}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCount</Property>
 	<Property Name="varPersistentID:{8570C9C2-73A4-44A7-85E5-1D73400556A4}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameSaved</Property>
@@ -13,6 +16,8 @@
 	<Property Name="varPersistentID:{B815CFBA-DE67-4C56-AC3D-A110544ED643}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/xboxDataFull</Property>
 	<Property Name="varPersistentID:{C39C69E6-79C9-412E-84A0-AED645BD8464}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameAvailable</Property>
 	<Property Name="varPersistentID:{C921F586-F4CC-41F1-B802-1C18C9987717}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCurrentIndex</Property>
+	<Property Name="varPersistentID:{EAE2D4D5-921A-4687-BED5-04374B4DD3E4}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/volumeDirection</Property>
+	<Property Name="varPersistentID:{F6449EA4-16AF-4E46-B30D-291E344E1CC8}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/folderBasename</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -36,6 +41,7 @@
 				<Item Name="opencvSegmentMultipleTest.vi" Type="VI" URL="../opencvSegmentMultipleTest.vi"/>
 				<Item Name="opencvSegmentTest.vi" Type="VI" URL="../opencvSegmentTest.vi"/>
 			</Item>
+			<Item Name="acquisitionStepByStep.vi" Type="VI" URL="../acquisitionStepByStep.vi"/>
 			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
 			<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
 			<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
@@ -47,12 +53,38 @@
 			<Item Name="stage.vi" Type="VI" URL="../stage.vi"/>
 		</Item>
 		<Item Name="main" Type="Folder">
-			<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+			<Item Name="backend" Type="Folder">
+				<Item Name="mainPumpProbe.vi" Type="VI" URL="../mainPumpProbe.vi"/>
+				<Item Name="mainWholeBrainImager.vi" Type="VI" URL="../mainWholeBrainImager.vi"/>
+			</Item>
+			<Item Name="logbook.vi" Type="VI" URL="../logbook.vi"/>
 			<Item Name="mainObjectivesRegistration.vi" Type="VI" URL="../mainObjectivesRegistration.vi"/>
-			<Item Name="mainUI.vi" Type="VI" URL="../mainUI.vi"/>
+			<Item Name="mainUIPumpProbe.vi" Type="VI" URL="../mainUIPumpProbe.vi"/>
+			<Item Name="mainUIWholeBrainImager.vi" Type="VI" URL="../mainUIWholeBrainImager.vi"/>
+			<Item Name="xbox.vi" Type="VI" URL="../xbox.vi"/>
 		</Item>
 		<Item Name="subvi" Type="Folder">
+			<Item Name="subvi-acquisitionUtilities" Type="Folder">
+				<Item Name="acquisitionAcquireVolumeFindNeurons.vi" Type="VI" URL="../acquisitionAcquireVolumeFindNeurons.vi"/>
+				<Item Name="acquisitionAxisProjection.vi" Type="VI" URL="../acquisitionAxisProjection.vi"/>
+				<Item Name="acquisitionDisplayVolume.vi" Type="VI" URL="../acquisitionDisplayVolume.vi"/>
+				<Item Name="acquisitionFrameBrightness.vi" Type="VI" URL="../acquisitionFrameBrightness.vi"/>
+				<Item Name="acquisitionGetChannelsFromFrame.vi" Type="VI" URL="../acquisitionGetChannelsFromFrame.vi"/>
+				<Item Name="acquisitionGetChannelsFromFrames.vi" Type="VI" URL="../acquisitionGetChannelsFromFrames.vi"/>
+				<Item Name="acquisitionGetVolume.vi" Type="VI" URL="../acquisitionGetVolume.vi"/>
+				<Item Name="acquisitionSaveVolume.vi" Type="VI" URL="../acquisitionSaveVolume.vi"/>
+				<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
+				<Item Name="acquisitionStartStop.vi" Type="VI" URL="../acquisitionStartStop.vi"/>
+			</Item>
 			<Item Name="subvi-devices" Type="Folder">
+				<Item Name="subvi-devicesUtilities" Type="Folder">
+					<Item Name="galvoGeneratePositionsGrid.vi" Type="VI" URL="../galvoGeneratePositionsGrid.vi"/>
+					<Item Name="pharosGenerateTriggers.vi" Type="VI" URL="../pharosGenerateTriggers.vi"/>
+					<Item Name="piezoAutofocus.vi" Type="VI" URL="../piezoAutofocus.vi"/>
+					<Item Name="piezoGeneratePositions.vi" Type="VI" URL="../piezoGeneratePositions.vi"/>
+					<Item Name="piezoGetPosFromFirstFrameCount.vi" Type="VI" URL="../piezoGetPosFromFirstFrameCount.vi"/>
+					<Item Name="piezoGetPosFromFrameCount.vi" Type="VI" URL="../piezoGetPosFromFrameCount.vi"/>
+				</Item>
 				<Item Name="csuClose.vi" Type="VI" URL="../csuClose.vi"/>
 				<Item Name="csuCloseShutter.vi" Type="VI" URL="../csuCloseShutter.vi"/>
 				<Item Name="csuIO.vi" Type="VI" URL="../csuIO.vi"/>
@@ -68,6 +100,12 @@
 				<Item Name="filterWheelClose.vi" Type="VI" URL="../filterWheelClose.vi"/>
 				<Item Name="filterWheelMove.vi" Type="VI" URL="../filterWheelMove.vi"/>
 				<Item Name="filterWheelOpen.vi" Type="VI" URL="../filterWheelOpen.vi"/>
+				<Item Name="flashClose.vi" Type="VI" URL="../flashClose.vi"/>
+				<Item Name="flashFlash.vi" Type="VI" URL="../flashFlash.vi"/>
+				<Item Name="flashOpen.vi" Type="VI" URL="../flashOpen.vi"/>
+				<Item Name="focusKnobClose.vi" Type="VI" URL="../focusKnobClose.vi"/>
+				<Item Name="focusKnobMove.vi" Type="VI" URL="../focusKnobMove.vi"/>
+				<Item Name="focusKnobOpen.vi" Type="VI" URL="../focusKnobOpen.vi"/>
 				<Item Name="galvoWriteClose.vi" Type="VI" URL="../galvoWriteClose.vi"/>
 				<Item Name="galvoWriteOpen.vi" Type="VI" URL="../galvoWriteOpen.vi"/>
 				<Item Name="galvoWriteWrite.vi" Type="VI" URL="../galvoWriteWrite.vi"/>
@@ -80,12 +118,15 @@
 				<Item Name="hamamatsuReadIndexesOnly.vi" Type="VI" URL="../hamamatsuReadIndexesOnly.vi"/>
 				<Item Name="hamamatsuReadToRAM.vi" Type="VI" URL="../hamamatsuReadToRAM.vi"/>
 				<Item Name="hamamatsuSetStartTrigger.vi" Type="VI" URL="../hamamatsuSetStartTrigger.vi"/>
+				<Item Name="ludlRead.vi" Type="VI" URL="../ludlRead.vi"/>
 				<Item Name="pharosClose.vi" Type="VI" URL="../pharosClose.vi"/>
 				<Item Name="pharosOpen.vi" Type="VI" URL="../pharosOpen.vi"/>
 				<Item Name="pharosSet.vi" Type="VI" URL="../pharosSet.vi"/>
 				<Item Name="pharosStart.vi" Type="VI" URL="../pharosStart.vi"/>
 				<Item Name="piezoReadClose.vi" Type="VI" URL="../piezoReadClose.vi"/>
 				<Item Name="piezoReadOpen.vi" Type="VI" URL="../piezoReadOpen.vi"/>
+				<Item Name="piezoUSBRead.vi" Type="VI" URL="../piezoUSBRead.vi"/>
+				<Item Name="piezoUSBWrite.vi" Type="VI" URL="../piezoUSBWrite.vi"/>
 				<Item Name="piezoWriteClose.vi" Type="VI" URL="../piezoWriteClose.vi"/>
 				<Item Name="piezoWriteOpen.vi" Type="VI" URL="../piezoWriteOpen.vi"/>
 				<Item Name="piezoWriteStart.vi" Type="VI" URL="../piezoWriteStart.vi"/>
@@ -106,6 +147,17 @@
 				<Item Name="gmmregTransform.vi" Type="VI" URL="../gmmregTransform.vi"/>
 				<Item Name="gmmregTransformLowLevel.vi" Type="VI" URL="../gmmregTransformLowLevel.vi"/>
 			</Item>
+			<Item Name="subvi-initAndFile" Type="Folder">
+				<Item Name="fileAsynchronousCreate.vi" Type="VI" URL="../fileAsynchronousCreate.vi"/>
+				<Item Name="fileAsynchronousWrite.vi" Type="VI" URL="../fileAsynchronousWrite.vi"/>
+				<Item Name="fileDelete.vi" Type="VI" URL="../fileDelete.vi"/>
+				<Item Name="fileObjectivesRegistrationLoad.vi" Type="VI" URL="../fileObjectivesRegistrationLoad.vi"/>
+				<Item Name="fileObjectivesRegistrationMostRecent.vi" Type="VI" URL="../fileObjectivesRegistrationMostRecent.vi"/>
+				<Item Name="fileObjectivesRegistrationSave.vi" Type="VI" URL="../fileObjectivesRegistrationSave.vi"/>
+				<Item Name="initFilename.vi" Type="VI" URL="../initFilename.vi"/>
+				<Item Name="initGeneralStop.vi" Type="VI" URL="../initGeneralStop.vi"/>
+				<Item Name="initVariables.vi" Type="VI" URL="../initVariables.vi"/>
+			</Item>
 			<Item Name="subvi-opencv" Type="Folder">
 				<Item Name="opencvFindPeak.vi" Type="VI" URL="../opencvFindPeak.vi"/>
 				<Item Name="opencvSegment.vi" Type="VI" URL="../opencvSegment.vi"/>
@@ -116,28 +168,9 @@
 				<Item Name="opencvSegmentVisualize.vi" Type="VI" URL="../opencvSegmentVisualize.vi"/>
 				<Item Name="opencvSelectCandidateNeurons5Planes.vi" Type="VI" URL="../opencvSelectCandidateNeurons5Planes.vi"/>
 			</Item>
-			<Item Name="acquisitionAcquireVolumeFindNeurons.vi" Type="VI" URL="../acquisitionAcquireVolumeFindNeurons.vi"/>
-			<Item Name="acquisitionFrameBrightness.vi" Type="VI" URL="../acquisitionFrameBrightness.vi"/>
-			<Item Name="acquisitionGetChannelsFromFrame.vi" Type="VI" URL="../acquisitionGetChannelsFromFrame.vi"/>
-			<Item Name="acquisitionGetChannelsFromFrames.vi" Type="VI" URL="../acquisitionGetChannelsFromFrames.vi"/>
-			<Item Name="acquisitionGetVolume.vi" Type="VI" URL="../acquisitionGetVolume.vi"/>
-			<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
-			<Item Name="acquisitionStartStop.vi" Type="VI" URL="../acquisitionStartStop.vi"/>
-			<Item Name="acquisitionZProjection.vi" Type="VI" URL="../acquisitionZProjection.vi"/>
-			<Item Name="fileDelete.vi" Type="VI" URL="../fileDelete.vi"/>
-			<Item Name="fileObjectivesRegistrationLoad.vi" Type="VI" URL="../fileObjectivesRegistrationLoad.vi"/>
-			<Item Name="fileObjectivesRegistrationMostRecent.vi" Type="VI" URL="../fileObjectivesRegistrationMostRecent.vi"/>
-			<Item Name="fileObjectivesRegistrationSave.vi" Type="VI" URL="../fileObjectivesRegistrationSave.vi"/>
-			<Item Name="galvoGeneratePositionsGrid.vi" Type="VI" URL="../galvoGeneratePositionsGrid.vi"/>
-			<Item Name="initFilename.vi" Type="VI" URL="../initFilename.vi"/>
-			<Item Name="initGeneralStop.vi" Type="VI" URL="../initGeneralStop.vi"/>
-			<Item Name="initVariables.vi" Type="VI" URL="../initVariables.vi"/>
+			<Item Name="logbookEntry.vi" Type="VI" URL="../logbookEntry.vi"/>
 			<Item Name="objectivesRegistrationMap.vi" Type="VI" URL="../objectivesRegistrationMap.vi"/>
 			<Item Name="optogeneticsTarget3D.vi" Type="VI" URL="../optogeneticsTarget3D.vi"/>
-			<Item Name="pharosGenerateTriggers.vi" Type="VI" URL="../pharosGenerateTriggers.vi"/>
-			<Item Name="piezo2GeneratePositions.vi" Type="VI" URL="../piezo2GeneratePositions.vi"/>
-			<Item Name="piezoGetPosFromFirstFrameCount.vi" Type="VI" URL="../piezoGetPosFromFirstFrameCount.vi"/>
-			<Item Name="piezoGetPosFromFrameCount.vi" Type="VI" URL="../piezoGetPosFromFrameCount.vi"/>
 		</Item>
 		<Item Name="variables" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
@@ -169,6 +202,12 @@
 				<Item Name="tm_waitnextframe_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_waitnextframe_40.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="_2DArrToArrWfms.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_2DArrToArrWfms.vi"/>
+				<Item Name="_ArrWfmsTo1DInterleave.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo1DInterleave.vi"/>
+				<Item Name="_ArrWfmsTo2DArr.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsTo2DArr.vi"/>
+				<Item Name="_ArrWfmsToData.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_ArrWfmsToData.vi"/>
+				<Item Name="_Get Sound Error From Return Value.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_Get Sound Error From Return Value.vi"/>
+				<Item Name="_GetConfiguration.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_GetConfiguration.vi"/>
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -410,6 +449,8 @@
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Number To Enum.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Number To Enum.vim"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
+				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
+				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
 				<Item Name="Query Input Devices.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Query Input Devices.vi"/>
 				<Item Name="Read Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (DBL).vi"/>
 				<Item Name="Read Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet (I64).vi"/>
@@ -417,6 +458,7 @@
 				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
 				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
+				<Item Name="Sampling Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sampling Mode.ctl"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
@@ -424,6 +466,32 @@
 				<Item Name="Sort 2D Array - Pop Stack.vi" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 2D Array - Pop Stack.vi"/>
 				<Item Name="Sort 2D Array - Push Stack.vi" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 2D Array - Push Stack.vi"/>
 				<Item Name="Sort 2D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Sort 2D Array.vim"/>
+				<Item Name="Sound Data Format.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Data Format.ctl"/>
+				<Item Name="Sound File Close.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Close.vi"/>
+				<Item Name="Sound File Open.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Open.vi"/>
+				<Item Name="Sound File Read Open.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Read Open.vi"/>
+				<Item Name="Sound File Refnum.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Refnum.ctl"/>
+				<Item Name="Sound File Write (DBL Single).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Write (DBL Single).vi"/>
+				<Item Name="Sound File Write (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Write (DBL).vi"/>
+				<Item Name="Sound File Write (I16).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Write (I16).vi"/>
+				<Item Name="Sound File Write (I32).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Write (I32).vi"/>
+				<Item Name="Sound File Write (SGL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Write (SGL).vi"/>
+				<Item Name="Sound File Write (U8).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Write (U8).vi"/>
+				<Item Name="Sound File Write Open.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Write Open.vi"/>
+				<Item Name="Sound File Write.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound File Write.vi"/>
+				<Item Name="Sound Input Clear.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Clear.vi"/>
+				<Item Name="Sound Input Configure.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Configure.vi"/>
+				<Item Name="Sound Input Read (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Read (DBL).vi"/>
+				<Item Name="Sound Input Read (I16).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Read (I16).vi"/>
+				<Item Name="Sound Input Read (I32).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Read (I32).vi"/>
+				<Item Name="Sound Input Read (SGL).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Read (SGL).vi"/>
+				<Item Name="Sound Input Read (U8).vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Read (U8).vi"/>
+				<Item Name="Sound Input Read.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Read.vi"/>
+				<Item Name="Sound Input Start.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Start.vi"/>
+				<Item Name="Sound Input Stop.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Stop.vi"/>
+				<Item Name="Sound Input Task ID.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Input Task ID.ctl"/>
+				<Item Name="Sound Output Task ID.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Task ID.ctl"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
@@ -441,6 +509,8 @@
 			<Item Name="libximc.lvlib" Type="Library" URL="../Stage/ximcLVx64/libximc.lvlib"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
+			<Item Name="Madlib.lvlib" Type="Library" URL="../Piezo/lvlib/Madlib.lvlib"/>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
