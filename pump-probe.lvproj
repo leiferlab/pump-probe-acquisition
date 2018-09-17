@@ -31,6 +31,7 @@
 		<Item Name="basic and test" Type="Folder">
 			<Item Name="test" Type="Folder">
 				<Item Name="counterTest.vi" Type="VI" URL="../counterTest.vi"/>
+				<Item Name="csuTestResponsiveness.vi" Type="VI" URL="../csuTestResponsiveness.vi"/>
 				<Item Name="filterWheelTest.vi" Type="VI" URL="../filterWheelTest.vi"/>
 				<Item Name="gmmregRegistrationTest.vi" Type="VI" URL="../gmmregRegistrationTest.vi"/>
 				<Item Name="gmmregRegistrationTestLowLevel.vi" Type="VI" URL="../gmmregRegistrationTestLowLevel.vi"/>
@@ -54,14 +55,18 @@
 		</Item>
 		<Item Name="main" Type="Folder">
 			<Item Name="backend" Type="Folder">
+				<Item Name="flash.vi" Type="VI" URL="../flash.vi"/>
 				<Item Name="mainPumpProbe.vi" Type="VI" URL="../mainPumpProbe.vi"/>
 				<Item Name="mainWholeBrainImager.vi" Type="VI" URL="../mainWholeBrainImager.vi"/>
 			</Item>
-			<Item Name="logbook.vi" Type="VI" URL="../logbook.vi"/>
+			<Item Name="utilities" Type="Folder">
+				<Item Name="logbook.vi" Type="VI" URL="../logbook.vi"/>
+				<Item Name="xbox.vi" Type="VI" URL="../xbox.vi"/>
+			</Item>
+			<Item Name="mainMultiColorWorm.vi" Type="VI" URL="../mainMultiColorWorm.vi"/>
 			<Item Name="mainObjectivesRegistration.vi" Type="VI" URL="../mainObjectivesRegistration.vi"/>
 			<Item Name="mainUIPumpProbe.vi" Type="VI" URL="../mainUIPumpProbe.vi"/>
 			<Item Name="mainUIWholeBrainImager.vi" Type="VI" URL="../mainUIWholeBrainImager.vi"/>
-			<Item Name="xbox.vi" Type="VI" URL="../xbox.vi"/>
 		</Item>
 		<Item Name="subvi" Type="Folder">
 			<Item Name="subvi-acquisitionUtilities" Type="Folder">
