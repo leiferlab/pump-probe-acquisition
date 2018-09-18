@@ -114,6 +114,7 @@
 				<Item Name="galvoWriteClose.vi" Type="VI" URL="../galvoWriteClose.vi"/>
 				<Item Name="galvoWriteOpen.vi" Type="VI" URL="../galvoWriteOpen.vi"/>
 				<Item Name="galvoWriteWrite.vi" Type="VI" URL="../galvoWriteWrite.vi"/>
+				<Item Name="hamamatsuBufferKeepAlive.vi" Type="VI" URL="../hamamatsuBufferKeepAlive.vi"/>
 				<Item Name="hamamatsuClose.vi" Type="VI" URL="../hamamatsuClose.vi"/>
 				<Item Name="hamamatsuFrameCounterClose.vi" Type="VI" URL="../hamamatsuFrameCounterClose.vi"/>
 				<Item Name="hamamatsuFrameCounterOpen.vi" Type="VI" URL="../hamamatsuFrameCounterOpen.vi"/>
