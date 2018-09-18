@@ -186,6 +186,7 @@
 			<Item Name="objectivesRegistrationRaw.ctl" Type="VI" URL="../objectivesRegistrationRaw.ctl"/>
 			<Item Name="xboxDataFull.ctl" Type="VI" URL="../xboxDataFull.ctl"/>
 			<Item Name="hamamatsuBuffer.vi" Type="VI" URL="../hamamatsuBuffer.vi"/>
+			<Item Name="hamamatsuFrameReferences.ctl" Type="VI" URL="../hamamatsuFrameReferences.ctl"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
