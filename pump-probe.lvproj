@@ -70,12 +70,14 @@
 		</Item>
 		<Item Name="subvi" Type="Folder">
 			<Item Name="subvi-acquisitionUtilities" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="acquisitionAcquireVolumeFindNeurons.vi" Type="VI" URL="../acquisitionAcquireVolumeFindNeurons.vi"/>
 				<Item Name="acquisitionAxisProjection.vi" Type="VI" URL="../acquisitionAxisProjection.vi"/>
 				<Item Name="acquisitionDisplayVolume.vi" Type="VI" URL="../acquisitionDisplayVolume.vi"/>
 				<Item Name="acquisitionFrameBrightness.vi" Type="VI" URL="../acquisitionFrameBrightness.vi"/>
 				<Item Name="acquisitionGetChannelsFromFrame.vi" Type="VI" URL="../acquisitionGetChannelsFromFrame.vi"/>
 				<Item Name="acquisitionGetChannelsFromFrames.vi" Type="VI" URL="../acquisitionGetChannelsFromFrames.vi"/>
+				<Item Name="acquisitionGetFrame.vi" Type="VI" URL="../acquisitionGetFrame.vi"/>
 				<Item Name="acquisitionGetVolume.vi" Type="VI" URL="../acquisitionGetVolume.vi"/>
 				<Item Name="acquisitionSaveVolume.vi" Type="VI" URL="../acquisitionSaveVolume.vi"/>
 				<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
@@ -89,6 +91,7 @@
 					<Item Name="piezoGeneratePositions.vi" Type="VI" URL="../piezoGeneratePositions.vi"/>
 					<Item Name="piezoGetPosFromFirstFrameCount.vi" Type="VI" URL="../piezoGetPosFromFirstFrameCount.vi"/>
 					<Item Name="piezoGetPosFromFrameCount.vi" Type="VI" URL="../piezoGetPosFromFrameCount.vi"/>
+					<Item Name="xboxToggleRecording.vi" Type="VI" URL="../xboxToggleRecording.vi"/>
 				</Item>
 				<Item Name="csuClose.vi" Type="VI" URL="../csuClose.vi"/>
 				<Item Name="csuCloseShutter.vi" Type="VI" URL="../csuCloseShutter.vi"/>
@@ -189,6 +192,7 @@
 			<Item Name="hamamatsuBuffer.vi" Type="VI" URL="../hamamatsuBuffer.vi"/>
 			<Item Name="hamamatsuFrameReferences.ctl" Type="VI" URL="../hamamatsuFrameReferences.ctl"/>
 		</Item>
+		<Item Name="mainBeadAlignment.vi" Type="VI" URL="../mainBeadAlignment.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="tm_closecamera_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_closecamera_40.vi"/>
