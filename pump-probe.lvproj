@@ -2,14 +2,16 @@
 <Project Type="Project" LVVersion="17008000">
 	<Property Name="varPersistentID:{06410A8A-322E-4C7F-9759-54B31449323F}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/piezoStep</Property>
 	<Property Name="varPersistentID:{27D7165F-9870-4C8B-8934-8F968FFF7DF8}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/piezoPosition</Property>
+	<Property Name="varPersistentID:{286A980C-A5AF-4FF5-83C2-508E8A2DE1B4}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameBrightness</Property>
 	<Property Name="varPersistentID:{2FA5E28E-19A5-4ACD-9D16-EFF6C0AE9C16}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/hamamatsuFrameCounter</Property>
 	<Property Name="varPersistentID:{35C106AC-94FD-47D5-8F64-C7EC4992A7BE}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/piezoPositionDerivative</Property>
 	<Property Name="varPersistentID:{47A20767-6077-4973-A62D-B2CC9034B3F7}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/objectivesRegistrationRaw</Property>
 	<Property Name="varPersistentID:{4B5EFDCB-34D9-40F3-B993-EB3070644509}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/fileBasename</Property>
-	<Property Name="varPersistentID:{4BBD1EB1-F10E-4A89-9906-A8669DB5ED8A}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameProcessedIndex</Property>
+	<Property Name="varPersistentID:{4BBD1EB1-F10E-4A89-9906-A8669DB5ED8A}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameProcessedCount</Property>
 	<Property Name="varPersistentID:{71594551-FD1D-42D2-BF68-A1C17D5A8514}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCurrent</Property>
 	<Property Name="varPersistentID:{771C3BE6-CC7C-425E-B1BA-B9C3EBC18D5A}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCount</Property>
 	<Property Name="varPersistentID:{8570C9C2-73A4-44A7-85E5-1D73400556A4}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameSaved</Property>
+	<Property Name="varPersistentID:{85D8BD46-B55A-4A87-8FCD-737981EC9665}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameXY</Property>
 	<Property Name="varPersistentID:{8DC4A730-48C5-4E76-9A26-8D3502577EB8}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/volumeFirstFrame</Property>
 	<Property Name="varPersistentID:{955727B8-AB75-4F68-B146-3A15D53B48E5}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameBackground</Property>
 	<Property Name="varPersistentID:{A62930A4-0BFD-4E66-963A-92FAAE86BEA7}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameSum</Property>
@@ -17,6 +19,8 @@
 	<Property Name="varPersistentID:{C39C69E6-79C9-412E-84A0-AED645BD8464}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameAvailable</Property>
 	<Property Name="varPersistentID:{C921F586-F4CC-41F1-B802-1C18C9987717}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCurrentIndex</Property>
 	<Property Name="varPersistentID:{EAE2D4D5-921A-4687-BED5-04374B4DD3E4}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/volumeDirection</Property>
+	<Property Name="varPersistentID:{ECDDFC01-66DA-4B9A-BDC7-7812E171BEBC}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameYZ</Property>
+	<Property Name="varPersistentID:{ED3EE7E1-6453-4904-8DFD-94FE9A63088F}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/frameCurrentCount</Property>
 	<Property Name="varPersistentID:{F6449EA4-16AF-4E46-B30D-291E344E1CC8}" Type="Ref">/My Computer/variables/sharedVariables.lvlib/folderBasename</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -46,23 +50,26 @@
 			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
 			<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
 			<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
+			<Item Name="focusKnob.vi" Type="VI" URL="../focusKnob.vi"/>
 			<Item Name="galvo.vi" Type="VI" URL="../galvo.vi"/>
 			<Item Name="hamamatsuSaveBGFrame.vi" Type="VI" URL="../hamamatsuSaveBGFrame.vi"/>
 			<Item Name="laserControl.vi" Type="VI" URL="../laserControl.vi"/>
 			<Item Name="piezo.vi" Type="VI" URL="../piezo.vi"/>
 			<Item Name="piezoHoldMidway.vi" Type="VI" URL="../piezoHoldMidway.vi"/>
 			<Item Name="stage.vi" Type="VI" URL="../stage.vi"/>
+			<Item Name="xbox.vi" Type="VI" URL="../xbox.vi"/>
 		</Item>
 		<Item Name="main" Type="Folder">
 			<Item Name="backend" Type="Folder">
+				<Item Name="computeDisplayImages.vi" Type="VI" URL="../computeDisplayImages.vi"/>
 				<Item Name="flash.vi" Type="VI" URL="../flash.vi"/>
 				<Item Name="mainPumpProbe.vi" Type="VI" URL="../mainPumpProbe.vi"/>
 				<Item Name="mainWholeBrainImager.vi" Type="VI" URL="../mainWholeBrainImager.vi"/>
 			</Item>
 			<Item Name="utilities" Type="Folder">
 				<Item Name="logbook.vi" Type="VI" URL="../logbook.vi"/>
-				<Item Name="xbox.vi" Type="VI" URL="../xbox.vi"/>
 			</Item>
+			<Item Name="mainBeadAlignment.vi" Type="VI" URL="../mainBeadAlignment.vi"/>
 			<Item Name="mainMultiColorWorm.vi" Type="VI" URL="../mainMultiColorWorm.vi"/>
 			<Item Name="mainObjectivesRegistration.vi" Type="VI" URL="../mainObjectivesRegistration.vi"/>
 			<Item Name="mainUIPumpProbe.vi" Type="VI" URL="../mainUIPumpProbe.vi"/>
@@ -78,6 +85,7 @@
 				<Item Name="acquisitionGetChannelsFromFrame.vi" Type="VI" URL="../acquisitionGetChannelsFromFrame.vi"/>
 				<Item Name="acquisitionGetChannelsFromFrames.vi" Type="VI" URL="../acquisitionGetChannelsFromFrames.vi"/>
 				<Item Name="acquisitionGetFrame.vi" Type="VI" URL="../acquisitionGetFrame.vi"/>
+				<Item Name="acquisitionGetFrame8bit.vi" Type="VI" URL="../acquisitionGetFrame8bit.vi"/>
 				<Item Name="acquisitionGetVolume.vi" Type="VI" URL="../acquisitionGetVolume.vi"/>
 				<Item Name="acquisitionSaveVolume.vi" Type="VI" URL="../acquisitionSaveVolume.vi"/>
 				<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
@@ -91,7 +99,7 @@
 					<Item Name="piezoGeneratePositions.vi" Type="VI" URL="../piezoGeneratePositions.vi"/>
 					<Item Name="piezoGetPosFromFirstFrameCount.vi" Type="VI" URL="../piezoGetPosFromFirstFrameCount.vi"/>
 					<Item Name="piezoGetPosFromFrameCount.vi" Type="VI" URL="../piezoGetPosFromFrameCount.vi"/>
-					<Item Name="xboxToggleRecording.vi" Type="VI" URL="../xboxToggleRecording.vi"/>
+					<Item Name="xboxToggle.vi" Type="VI" URL="../xboxToggle.vi"/>
 				</Item>
 				<Item Name="csuClose.vi" Type="VI" URL="../csuClose.vi"/>
 				<Item Name="csuCloseShutter.vi" Type="VI" URL="../csuCloseShutter.vi"/>
@@ -157,6 +165,7 @@
 				<Item Name="gmmregTransformLowLevel.vi" Type="VI" URL="../gmmregTransformLowLevel.vi"/>
 			</Item>
 			<Item Name="subvi-initAndFile" Type="Folder">
+				<Item Name="fileAsynchronousClose.vi" Type="VI" URL="../fileAsynchronousClose.vi"/>
 				<Item Name="fileAsynchronousCreate.vi" Type="VI" URL="../fileAsynchronousCreate.vi"/>
 				<Item Name="fileAsynchronousWrite.vi" Type="VI" URL="../fileAsynchronousWrite.vi"/>
 				<Item Name="fileDelete.vi" Type="VI" URL="../fileDelete.vi"/>
@@ -191,8 +200,9 @@
 			<Item Name="xboxDataFull.ctl" Type="VI" URL="../xboxDataFull.ctl"/>
 			<Item Name="hamamatsuBuffer.vi" Type="VI" URL="../hamamatsuBuffer.vi"/>
 			<Item Name="hamamatsuFrameReferences.ctl" Type="VI" URL="../hamamatsuFrameReferences.ctl"/>
+			<Item Name="hamamatsuFrame64bit.ctl" Type="VI" URL="../hamamatsuFrame64bit.ctl"/>
+			<Item Name="hamamatsuFrame8bit.ctl" Type="VI" URL="../hamamatsuFrame8bit.ctl"/>
 		</Item>
-		<Item Name="mainBeadAlignment.vi" Type="VI" URL="../mainBeadAlignment.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="tm_closecamera_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_closecamera_40.vi"/>
