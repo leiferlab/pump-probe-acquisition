@@ -56,6 +56,7 @@
 			<Item Name="laserControl.vi" Type="VI" URL="../laserControl.vi"/>
 			<Item Name="piezo.vi" Type="VI" URL="../piezo.vi"/>
 			<Item Name="piezoHoldMidway.vi" Type="VI" URL="../piezoHoldMidway.vi"/>
+			<Item Name="slider.vi" Type="VI" URL="../slider.vi"/>
 			<Item Name="stage.vi" Type="VI" URL="../stage.vi"/>
 			<Item Name="xbox.vi" Type="VI" URL="../xbox.vi"/>
 		</Item>
@@ -87,9 +88,11 @@
 				<Item Name="acquisitionGetFrame.vi" Type="VI" URL="../acquisitionGetFrame.vi"/>
 				<Item Name="acquisitionGetFrame8bit.vi" Type="VI" URL="../acquisitionGetFrame8bit.vi"/>
 				<Item Name="acquisitionGetVolume.vi" Type="VI" URL="../acquisitionGetVolume.vi"/>
+				<Item Name="acquisitionHMSfromS.vi" Type="VI" URL="../acquisitionHMSfromS.vi"/>
 				<Item Name="acquisitionSaveVolume.vi" Type="VI" URL="../acquisitionSaveVolume.vi"/>
 				<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
 				<Item Name="acquisitionStartStop.vi" Type="VI" URL="../acquisitionStartStop.vi"/>
+				<Item Name="multiColorWormMolecule.vi" Type="VI" URL="../multiColorWormMolecule.vi"/>
 			</Item>
 			<Item Name="subvi-devices" Type="Folder">
 				<Item Name="subvi-devicesUtilities" Type="Folder">
@@ -150,6 +153,9 @@
 				<Item Name="piezoWriteWrite.vi" Type="VI" URL="../piezoWriteWrite.vi"/>
 				<Item Name="piezoWriteWriteFuncGen.vi" Type="VI" URL="../piezoWriteWriteFuncGen.vi"/>
 				<Item Name="piezoWriteWriteSingleVolume.vi" Type="VI" URL="../piezoWriteWriteSingleVolume.vi"/>
+				<Item Name="sliderClose.vi" Type="VI" URL="../sliderClose.vi"/>
+				<Item Name="sliderMove.vi" Type="VI" URL="../sliderMove.vi"/>
+				<Item Name="sliderOpen.vi" Type="VI" URL="../sliderOpen.vi"/>
 				<Item Name="stageClose.vi" Type="VI" URL="../stageClose.vi"/>
 				<Item Name="stageMove.vi" Type="VI" URL="../stageMove.vi"/>
 				<Item Name="stageOpen.vi" Type="VI" URL="../stageOpen.vi"/>
