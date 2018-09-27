@@ -89,10 +89,11 @@
 				<Item Name="acquisitionGetFrame8bit.vi" Type="VI" URL="../acquisitionGetFrame8bit.vi"/>
 				<Item Name="acquisitionGetVolume.vi" Type="VI" URL="../acquisitionGetVolume.vi"/>
 				<Item Name="acquisitionHMSfromS.vi" Type="VI" URL="../acquisitionHMSfromS.vi"/>
+				<Item Name="acquisitionSaveBuffer.vi" Type="VI" URL="../acquisitionSaveBuffer.vi"/>
 				<Item Name="acquisitionSaveVolume.vi" Type="VI" URL="../acquisitionSaveVolume.vi"/>
 				<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
 				<Item Name="acquisitionStartStop.vi" Type="VI" URL="../acquisitionStartStop.vi"/>
-				<Item Name="multiColorWormMolecule.vi" Type="VI" URL="../multiColorWormMolecule.vi"/>
+				<Item Name="multiColorWormMoleculeSettings.vi" Type="VI" URL="../multiColorWormMoleculeSettings.vi"/>
 			</Item>
 			<Item Name="subvi-devices" Type="Folder">
 				<Item Name="subvi-devicesUtilities" Type="Folder">
@@ -128,7 +129,9 @@
 				<Item Name="galvoWriteClose.vi" Type="VI" URL="../galvoWriteClose.vi"/>
 				<Item Name="galvoWriteOpen.vi" Type="VI" URL="../galvoWriteOpen.vi"/>
 				<Item Name="galvoWriteWrite.vi" Type="VI" URL="../galvoWriteWrite.vi"/>
-				<Item Name="hamamatsuBufferKeepAlive.vi" Type="VI" URL="../hamamatsuBufferKeepAlive.vi"/>
+				<Item Name="hamamatsuBufferComplete.vi" Type="VI" URL="../hamamatsuBufferComplete.vi"/>
+				<Item Name="hamamatsuBufferIndexesAndFrames.vi" Type="VI" URL="../hamamatsuBufferIndexesAndFrames.vi"/>
+				<Item Name="hamamatsuBufferIndexesOnly.vi" Type="VI" URL="../hamamatsuBufferIndexesOnly.vi"/>
 				<Item Name="hamamatsuClose.vi" Type="VI" URL="../hamamatsuClose.vi"/>
 				<Item Name="hamamatsuFrameCounterClose.vi" Type="VI" URL="../hamamatsuFrameCounterClose.vi"/>
 				<Item Name="hamamatsuFrameCounterOpen.vi" Type="VI" URL="../hamamatsuFrameCounterOpen.vi"/>
@@ -136,6 +139,7 @@
 				<Item Name="hamamatsuRead.vi" Type="VI" URL="../hamamatsuRead.vi"/>
 				<Item Name="hamamatsuReadAsync.vi" Type="VI" URL="../hamamatsuReadAsync.vi"/>
 				<Item Name="hamamatsuReadIndexesOnly.vi" Type="VI" URL="../hamamatsuReadIndexesOnly.vi"/>
+				<Item Name="hamamatsuReadToBuffer.vi" Type="VI" URL="../hamamatsuReadToBuffer.vi"/>
 				<Item Name="hamamatsuReadToRAM.vi" Type="VI" URL="../hamamatsuReadToRAM.vi"/>
 				<Item Name="hamamatsuSetStartTrigger.vi" Type="VI" URL="../hamamatsuSetStartTrigger.vi"/>
 				<Item Name="ludlRead.vi" Type="VI" URL="../ludlRead.vi"/>
