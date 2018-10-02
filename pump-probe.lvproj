@@ -34,9 +34,9 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="basic and test" Type="Folder">
 			<Item Name="test" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="counterTest.vi" Type="VI" URL="../counterTest.vi"/>
 				<Item Name="csuTestResponsiveness.vi" Type="VI" URL="../csuTestResponsiveness.vi"/>
-				<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
 				<Item Name="filterWheelTest.vi" Type="VI" URL="../filterWheelTest.vi"/>
 				<Item Name="gmmregRegistrationTest.vi" Type="VI" URL="../gmmregRegistrationTest.vi"/>
 				<Item Name="gmmregRegistrationTestLowLevel.vi" Type="VI" URL="../gmmregRegistrationTestLowLevel.vi"/>
@@ -50,6 +50,7 @@
 			<Item Name="acquisitionStepByStep.vi" Type="VI" URL="../acquisitionStepByStep.vi"/>
 			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
 			<Item Name="cwlaser-old.vi" Type="VI" URL="../cwlaser-old.vi"/>
+			<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
 			<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
 			<Item Name="focusKnob.vi" Type="VI" URL="../focusKnob.vi"/>
 			<Item Name="galvo.vi" Type="VI" URL="../galvo.vi"/>
