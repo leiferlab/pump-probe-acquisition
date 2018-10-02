@@ -36,6 +36,7 @@
 			<Item Name="test" Type="Folder">
 				<Item Name="counterTest.vi" Type="VI" URL="../counterTest.vi"/>
 				<Item Name="csuTestResponsiveness.vi" Type="VI" URL="../csuTestResponsiveness.vi"/>
+				<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
 				<Item Name="filterWheelTest.vi" Type="VI" URL="../filterWheelTest.vi"/>
 				<Item Name="gmmregRegistrationTest.vi" Type="VI" URL="../gmmregRegistrationTest.vi"/>
 				<Item Name="gmmregRegistrationTestLowLevel.vi" Type="VI" URL="../gmmregRegistrationTestLowLevel.vi"/>
@@ -48,7 +49,7 @@
 			</Item>
 			<Item Name="acquisitionStepByStep.vi" Type="VI" URL="../acquisitionStepByStep.vi"/>
 			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
-			<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
+			<Item Name="cwlaser-old.vi" Type="VI" URL="../cwlaser-old.vi"/>
 			<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
 			<Item Name="focusKnob.vi" Type="VI" URL="../focusKnob.vi"/>
 			<Item Name="galvo.vi" Type="VI" URL="../galvo.vi"/>
@@ -90,6 +91,7 @@
 				<Item Name="acquisitionGetVolume.vi" Type="VI" URL="../acquisitionGetVolume.vi"/>
 				<Item Name="acquisitionHMSfromS.vi" Type="VI" URL="../acquisitionHMSfromS.vi"/>
 				<Item Name="acquisitionSaveBuffer.vi" Type="VI" URL="../acquisitionSaveBuffer.vi"/>
+				<Item Name="acquisitionSaveFrames.vi" Type="VI" URL="../acquisitionSaveFrames.vi"/>
 				<Item Name="acquisitionSaveVolume.vi" Type="VI" URL="../acquisitionSaveVolume.vi"/>
 				<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
 				<Item Name="acquisitionStartStop.vi" Type="VI" URL="../acquisitionStartStop.vi"/>
@@ -133,6 +135,7 @@
 				<Item Name="hamamatsuBufferIndexesAndFrames.vi" Type="VI" URL="../hamamatsuBufferIndexesAndFrames.vi"/>
 				<Item Name="hamamatsuBufferIndexesOnly.vi" Type="VI" URL="../hamamatsuBufferIndexesOnly.vi"/>
 				<Item Name="hamamatsuClose.vi" Type="VI" URL="../hamamatsuClose.vi"/>
+				<Item Name="hamamatsuExposureTimeChange.vi" Type="VI" URL="../hamamatsuExposureTimeChange.vi"/>
 				<Item Name="hamamatsuFrameCounterClose.vi" Type="VI" URL="../hamamatsuFrameCounterClose.vi"/>
 				<Item Name="hamamatsuFrameCounterOpen.vi" Type="VI" URL="../hamamatsuFrameCounterOpen.vi"/>
 				<Item Name="hamamatsuOpen.vi" Type="VI" URL="../hamamatsuOpen.vi"/>
@@ -141,6 +144,7 @@
 				<Item Name="hamamatsuReadIndexesOnly.vi" Type="VI" URL="../hamamatsuReadIndexesOnly.vi"/>
 				<Item Name="hamamatsuReadToBuffer.vi" Type="VI" URL="../hamamatsuReadToBuffer.vi"/>
 				<Item Name="hamamatsuReadToRAM.vi" Type="VI" URL="../hamamatsuReadToRAM.vi"/>
+				<Item Name="hamamatsuSetExternalTrigger.vi" Type="VI" URL="../hamamatsuSetExternalTrigger.vi"/>
 				<Item Name="hamamatsuSetStartTrigger.vi" Type="VI" URL="../hamamatsuSetStartTrigger.vi"/>
 				<Item Name="ludlRead.vi" Type="VI" URL="../ludlRead.vi"/>
 				<Item Name="pharosClose.vi" Type="VI" URL="../pharosClose.vi"/>
