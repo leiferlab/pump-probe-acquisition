@@ -97,6 +97,7 @@
 				<Item Name="acquisitionSplitVolumes.vi" Type="VI" URL="../acquisitionSplitVolumes.vi"/>
 				<Item Name="acquisitionStartStop.vi" Type="VI" URL="../acquisitionStartStop.vi"/>
 				<Item Name="multiColorWormMoleculeSettings.vi" Type="VI" URL="../multiColorWormMoleculeSettings.vi"/>
+				<Item Name="multiColorWormSaveSettings.vi" Type="VI" URL="../multiColorWormSaveSettings.vi"/>
 			</Item>
 			<Item Name="subvi-devices" Type="Folder">
 				<Item Name="subvi-devicesUtilities" Type="Folder">
@@ -163,6 +164,7 @@
 				<Item Name="piezoWriteWriteFuncGen.vi" Type="VI" URL="../piezoWriteWriteFuncGen.vi"/>
 				<Item Name="piezoWriteWriteSingleVolume.vi" Type="VI" URL="../piezoWriteWriteSingleVolume.vi"/>
 				<Item Name="sliderClose.vi" Type="VI" URL="../sliderClose.vi"/>
+				<Item Name="sliderGetPosition.vi" Type="VI" URL="../sliderGetPosition.vi"/>
 				<Item Name="sliderMove.vi" Type="VI" URL="../sliderMove.vi"/>
 				<Item Name="sliderOpen.vi" Type="VI" URL="../sliderOpen.vi"/>
 				<Item Name="stageClose.vi" Type="VI" URL="../stageClose.vi"/>
