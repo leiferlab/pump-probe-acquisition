@@ -32,12 +32,11 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="basic and test" Type="Folder">
+		<Item Name="basic" Type="Folder">
 			<Item Name="test" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="counterTest.vi" Type="VI" URL="../counterTest.vi"/>
 				<Item Name="csuTestResponsiveness.vi" Type="VI" URL="../csuTestResponsiveness.vi"/>
-				<Item Name="filterWheelTest.vi" Type="VI" URL="../filterWheelTest.vi"/>
 				<Item Name="gmmregRegistrationTest.vi" Type="VI" URL="../gmmregRegistrationTest.vi"/>
 				<Item Name="gmmregRegistrationTestLowLevel.vi" Type="VI" URL="../gmmregRegistrationTestLowLevel.vi"/>
 				<Item Name="hamamatsuParameters.vi" Type="VI" URL="../hamamatsuParameters.vi"/>
@@ -51,6 +50,7 @@
 			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
 			<Item Name="cwlaser-old.vi" Type="VI" URL="../cwlaser-old.vi"/>
 			<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
+			<Item Name="filterWheelTest.vi" Type="VI" URL="../filterWheelTest.vi"/>
 			<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
 			<Item Name="focusKnob.vi" Type="VI" URL="../focusKnob.vi"/>
 			<Item Name="galvo.vi" Type="VI" URL="../galvo.vi"/>
@@ -69,9 +69,7 @@
 				<Item Name="mainPumpProbe.vi" Type="VI" URL="../mainPumpProbe.vi"/>
 				<Item Name="mainWholeBrainImager.vi" Type="VI" URL="../mainWholeBrainImager.vi"/>
 			</Item>
-			<Item Name="utilities" Type="Folder">
-				<Item Name="logbook.vi" Type="VI" URL="../logbook.vi"/>
-			</Item>
+			<Item Name="logbook.vi" Type="VI" URL="../logbook.vi"/>
 			<Item Name="mainBeadAlignment.vi" Type="VI" URL="../mainBeadAlignment.vi"/>
 			<Item Name="mainMultiColorWorm.vi" Type="VI" URL="../mainMultiColorWorm.vi"/>
 			<Item Name="mainObjectivesRegistration.vi" Type="VI" URL="../mainObjectivesRegistration.vi"/>
@@ -98,6 +96,7 @@
 				<Item Name="acquisitionStartStop.vi" Type="VI" URL="../acquisitionStartStop.vi"/>
 				<Item Name="multiColorWormMoleculeSettings.vi" Type="VI" URL="../multiColorWormMoleculeSettings.vi"/>
 				<Item Name="multiColorWormSaveSettings.vi" Type="VI" URL="../multiColorWormSaveSettings.vi"/>
+				<Item Name="multiColorWormSetExposureTimeMultiplier.vi" Type="VI" URL="../multiColorWormSetExposureTimeMultiplier.vi"/>
 			</Item>
 			<Item Name="subvi-devices" Type="Folder">
 				<Item Name="subvi-devicesUtilities" Type="Folder">
@@ -122,6 +121,7 @@
 				<Item Name="daqCreateFile.vi" Type="VI" URL="../daqCreateFile.vi"/>
 				<Item Name="daqRead.vi" Type="VI" URL="../daqRead.vi"/>
 				<Item Name="filterWheelClose.vi" Type="VI" URL="../filterWheelClose.vi"/>
+				<Item Name="filterWheelGetPosition.vi" Type="VI" URL="../filterWheelGetPosition.vi"/>
 				<Item Name="filterWheelMove.vi" Type="VI" URL="../filterWheelMove.vi"/>
 				<Item Name="filterWheelOpen.vi" Type="VI" URL="../filterWheelOpen.vi"/>
 				<Item Name="flashClose.vi" Type="VI" URL="../flashClose.vi"/>
