@@ -153,6 +153,9 @@
 				<Item Name="pharosOpen.vi" Type="VI" URL="../pharosOpen.vi"/>
 				<Item Name="pharosSet.vi" Type="VI" URL="../pharosSet.vi"/>
 				<Item Name="pharosStart.vi" Type="VI" URL="../pharosStart.vi"/>
+				<Item Name="piezo2WriteClose.vi" Type="VI" URL="../piezo2WriteClose.vi"/>
+				<Item Name="piezo2WriteOpen.vi" Type="VI" URL="../piezo2WriteOpen.vi"/>
+				<Item Name="piezo2WriteWrite.vi" Type="VI" URL="../piezo2WriteWrite.vi"/>
 				<Item Name="piezoReadClose.vi" Type="VI" URL="../piezoReadClose.vi"/>
 				<Item Name="piezoReadOpen.vi" Type="VI" URL="../piezoReadOpen.vi"/>
 				<Item Name="piezoUSBRead.vi" Type="VI" URL="../piezoUSBRead.vi"/>
@@ -233,6 +236,7 @@
 				<Item Name="tm_inputtriggersource_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/trigger/tm_inputtriggersource_40.vi"/>
 				<Item Name="tm_opencamera_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_opencamera_40.vi"/>
 				<Item Name="tm_preparecapture_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_preparecapture_40.vi"/>
+				<Item Name="tm_sensorcooler_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/advanced/tm_sensorcooler_40.vi"/>
 				<Item Name="tm_setarea_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_setarea_40.vi"/>
 				<Item Name="tm_setparameter_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_setparameter_40.vi"/>
 				<Item Name="tm_startcapture_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_startcapture_40.vi"/>
