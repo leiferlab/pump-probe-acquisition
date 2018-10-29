@@ -50,12 +50,13 @@
 			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
 			<Item Name="cwlaser-old.vi" Type="VI" URL="../cwlaser-old.vi"/>
 			<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
-			<Item Name="filterWheelTest.vi" Type="VI" URL="../filterWheelTest.vi"/>
+			<Item Name="filterWheel.vi" Type="VI" URL="../filterWheel.vi"/>
 			<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
 			<Item Name="focusKnob.vi" Type="VI" URL="../focusKnob.vi"/>
 			<Item Name="galvo.vi" Type="VI" URL="../galvo.vi"/>
 			<Item Name="hamamatsuSaveBGFrame.vi" Type="VI" URL="../hamamatsuSaveBGFrame.vi"/>
 			<Item Name="laserControl.vi" Type="VI" URL="../laserControl.vi"/>
+			<Item Name="multicolorWormSetLaserAndFilter.vi" Type="VI" URL="../multicolorWormSetLaserAndFilter.vi"/>
 			<Item Name="piezo.vi" Type="VI" URL="../piezo.vi"/>
 			<Item Name="piezoHoldMidway.vi" Type="VI" URL="../piezoHoldMidway.vi"/>
 			<Item Name="slider.vi" Type="VI" URL="../slider.vi"/>
@@ -229,6 +230,7 @@
 				<Item Name="tm_deinitialize_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_deinitialize_40.vi"/>
 				<Item Name="tm_errorreport.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_errorreport.vi"/>
 				<Item Name="tm_getframe16_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_getframe16_40.vi"/>
+				<Item Name="tm_getparameter_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_getparameter_40.vi"/>
 				<Item Name="tm_getparameterlimits_41.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_getparameterlimits_41.vi"/>
 				<Item Name="tm_getparameterlist_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_getparameterlist_40.vi"/>
 				<Item Name="tm_initialize_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_initialize_40.vi"/>
@@ -236,7 +238,6 @@
 				<Item Name="tm_inputtriggersource_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/trigger/tm_inputtriggersource_40.vi"/>
 				<Item Name="tm_opencamera_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_opencamera_40.vi"/>
 				<Item Name="tm_preparecapture_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_preparecapture_40.vi"/>
-				<Item Name="tm_sensorcooler_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/advanced/tm_sensorcooler_40.vi"/>
 				<Item Name="tm_setarea_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_setarea_40.vi"/>
 				<Item Name="tm_setparameter_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_setparameter_40.vi"/>
 				<Item Name="tm_startcapture_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_startcapture_40.vi"/>
