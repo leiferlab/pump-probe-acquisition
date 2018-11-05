@@ -48,7 +48,6 @@
 			</Item>
 			<Item Name="acquisitionStepByStep.vi" Type="VI" URL="../acquisitionStepByStep.vi"/>
 			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
-			<Item Name="cwlaser-old.vi" Type="VI" URL="../cwlaser-old.vi"/>
 			<Item Name="cwlaser.vi" Type="VI" URL="../cwlaser.vi"/>
 			<Item Name="filterWheel.vi" Type="VI" URL="../filterWheel.vi"/>
 			<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
@@ -62,6 +61,7 @@
 			<Item Name="piezoSimple.vi" Type="VI" URL="../piezoSimple.vi"/>
 			<Item Name="slider.vi" Type="VI" URL="../slider.vi"/>
 			<Item Name="stage.vi" Type="VI" URL="../stage.vi"/>
+			<Item Name="wholeBrainImagerSetLasers.vi" Type="VI" URL="../wholeBrainImagerSetLasers.vi"/>
 			<Item Name="xbox.vi" Type="VI" URL="../xbox.vi"/>
 		</Item>
 		<Item Name="main" Type="Folder">
