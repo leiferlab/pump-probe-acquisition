@@ -59,6 +59,7 @@
 			<Item Name="multicolorWormSetLaserAndFilter.vi" Type="VI" URL="../multicolorWormSetLaserAndFilter.vi"/>
 			<Item Name="piezo.vi" Type="VI" URL="../piezo.vi"/>
 			<Item Name="piezoHoldMidway.vi" Type="VI" URL="../piezoHoldMidway.vi"/>
+			<Item Name="piezoSimple.vi" Type="VI" URL="../piezoSimple.vi"/>
 			<Item Name="slider.vi" Type="VI" URL="../slider.vi"/>
 			<Item Name="stage.vi" Type="VI" URL="../stage.vi"/>
 			<Item Name="xbox.vi" Type="VI" URL="../xbox.vi"/>
@@ -207,6 +208,8 @@
 				<Item Name="opencvSegmentVisualize.vi" Type="VI" URL="../opencvSegmentVisualize.vi"/>
 				<Item Name="opencvSelectCandidateNeurons5Planes.vi" Type="VI" URL="../opencvSelectCandidateNeurons5Planes.vi"/>
 			</Item>
+			<Item Name="configurePorts.vi" Type="VI" URL="../configurePorts.vi"/>
+			<Item Name="getComputerName.vi" Type="VI" URL="../getComputerName.vi"/>
 			<Item Name="logbookEntry.vi" Type="VI" URL="../logbookEntry.vi"/>
 			<Item Name="objectivesRegistrationMap.vi" Type="VI" URL="../objectivesRegistrationMap.vi"/>
 			<Item Name="optogeneticsTarget3D.vi" Type="VI" URL="../optogeneticsTarget3D.vi"/>
