@@ -159,6 +159,7 @@
 				<Item Name="piezo2WriteClose.vi" Type="VI" URL="../piezo2WriteClose.vi"/>
 				<Item Name="piezo2WriteOpen.vi" Type="VI" URL="../piezo2WriteOpen.vi"/>
 				<Item Name="piezo2WriteWrite.vi" Type="VI" URL="../piezo2WriteWrite.vi"/>
+				<Item Name="piezo2WriteWriteFuncGen.vi" Type="VI" URL="../piezo2WriteWriteFuncGen.vi"/>
 				<Item Name="piezoReadClose.vi" Type="VI" URL="../piezoReadClose.vi"/>
 				<Item Name="piezoReadOpen.vi" Type="VI" URL="../piezoReadOpen.vi"/>
 				<Item Name="piezoUSBRead.vi" Type="VI" URL="../piezoUSBRead.vi"/>
@@ -228,6 +229,7 @@
 			<Item Name="hamamatsuFrame64bit.ctl" Type="VI" URL="../hamamatsuFrame64bit.ctl"/>
 			<Item Name="hamamatsuFrame8bit.ctl" Type="VI" URL="../hamamatsuFrame8bit.ctl"/>
 		</Item>
+		<Item Name="piezo2WriteStart.vi" Type="VI" URL="../piezo2WriteStart.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="tm_closecamera_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_closecamera_40.vi"/>
