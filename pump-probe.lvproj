@@ -45,6 +45,7 @@
 				<Item Name="opencvFindPeakTest.vi" Type="VI" URL="../opencvFindPeakTest.vi"/>
 				<Item Name="opencvSegmentMultipleTest.vi" Type="VI" URL="../opencvSegmentMultipleTest.vi"/>
 				<Item Name="opencvSegmentTest.vi" Type="VI" URL="../opencvSegmentTest.vi"/>
+				<Item Name="piezoDoubleSync.vi" Type="VI" URL="../piezoDoubleSync.vi"/>
 			</Item>
 			<Item Name="acquisitionStepByStep.vi" Type="VI" URL="../acquisitionStepByStep.vi"/>
 			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
@@ -58,6 +59,7 @@
 			<Item Name="laserControl.vi" Type="VI" URL="../laserControl.vi"/>
 			<Item Name="multicolorWormSetLaserAndFilter.vi" Type="VI" URL="../multicolorWormSetLaserAndFilter.vi"/>
 			<Item Name="piezo.vi" Type="VI" URL="../piezo.vi"/>
+			<Item Name="piezoDoubleSyncLearn.vi" Type="VI" URL="../piezoDoubleSyncLearn.vi"/>
 			<Item Name="piezoHoldMidway.vi" Type="VI" URL="../piezoHoldMidway.vi"/>
 			<Item Name="piezoSimple.vi" Type="VI" URL="../piezoSimple.vi"/>
 			<Item Name="slider.vi" Type="VI" URL="../slider.vi"/>
@@ -109,6 +111,7 @@
 					<Item Name="piezoGeneratePositions.vi" Type="VI" URL="../piezoGeneratePositions.vi"/>
 					<Item Name="piezoGetPosFromFirstFrameCount.vi" Type="VI" URL="../piezoGetPosFromFirstFrameCount.vi"/>
 					<Item Name="piezoGetPosFromFrameCount.vi" Type="VI" URL="../piezoGetPosFromFrameCount.vi"/>
+					<Item Name="piezoTriangleWave.vi" Type="VI" URL="../piezoTriangleWave.vi"/>
 					<Item Name="xboxToggle.vi" Type="VI" URL="../xboxToggle.vi"/>
 				</Item>
 				<Item Name="csuClose.vi" Type="VI" URL="../csuClose.vi"/>
@@ -158,8 +161,13 @@
 				<Item Name="pharosStart.vi" Type="VI" URL="../pharosStart.vi"/>
 				<Item Name="piezo2WriteClose.vi" Type="VI" URL="../piezo2WriteClose.vi"/>
 				<Item Name="piezo2WriteOpen.vi" Type="VI" URL="../piezo2WriteOpen.vi"/>
+				<Item Name="piezo2WriteStart.vi" Type="VI" URL="../piezo2WriteStart.vi"/>
 				<Item Name="piezo2WriteWrite.vi" Type="VI" URL="../piezo2WriteWrite.vi"/>
 				<Item Name="piezo2WriteWriteFuncGen.vi" Type="VI" URL="../piezo2WriteWriteFuncGen.vi"/>
+				<Item Name="piezoDoubleWriteClose.vi" Type="VI" URL="../piezoDoubleWriteClose.vi"/>
+				<Item Name="piezoDoubleWriteOpen.vi" Type="VI" URL="../piezoDoubleWriteOpen.vi"/>
+				<Item Name="piezoDoubleWriteWrite.vi" Type="VI" URL="../piezoDoubleWriteWrite.vi"/>
+				<Item Name="piezoDoubleWriteWriteFuncGen.vi" Type="VI" URL="../piezoDoubleWriteWriteFuncGen.vi"/>
 				<Item Name="piezoReadClose.vi" Type="VI" URL="../piezoReadClose.vi"/>
 				<Item Name="piezoReadOpen.vi" Type="VI" URL="../piezoReadOpen.vi"/>
 				<Item Name="piezoUSBRead.vi" Type="VI" URL="../piezoUSBRead.vi"/>
@@ -229,7 +237,6 @@
 			<Item Name="hamamatsuFrame64bit.ctl" Type="VI" URL="../hamamatsuFrame64bit.ctl"/>
 			<Item Name="hamamatsuFrame8bit.ctl" Type="VI" URL="../hamamatsuFrame8bit.ctl"/>
 		</Item>
-		<Item Name="piezo2WriteStart.vi" Type="VI" URL="../piezo2WriteStart.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="tm_closecamera_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_closecamera_40.vi"/>
@@ -417,6 +424,7 @@
 				<Item Name="DAQmx Timing (Sample Clock).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Sample Clock).vi"/>
 				<Item Name="DAQmx Timing (Use Waveform).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing (Use Waveform).vi"/>
 				<Item Name="DAQmx Timing.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/timing.llb/DAQmx Timing.vi"/>
+				<Item Name="DAQmx Wait Until Done.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Wait Until Done.vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQmx Write (Analog 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D Wfm NChan 1Samp).vi"/>
