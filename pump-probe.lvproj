@@ -177,6 +177,7 @@
 				<Item Name="piezoWriteStart.vi" Type="VI" URL="../piezoWriteStart.vi"/>
 				<Item Name="piezoWriteWrite.vi" Type="VI" URL="../piezoWriteWrite.vi"/>
 				<Item Name="piezoWriteWriteFuncGen.vi" Type="VI" URL="../piezoWriteWriteFuncGen.vi"/>
+				<Item Name="piezoWriteWriteFuncGenNew.vi" Type="VI" URL="../piezoWriteWriteFuncGenNew.vi"/>
 				<Item Name="piezoWriteWriteSingleVolume.vi" Type="VI" URL="../piezoWriteWriteSingleVolume.vi"/>
 				<Item Name="sliderClose.vi" Type="VI" URL="../sliderClose.vi"/>
 				<Item Name="sliderGetPosition.vi" Type="VI" URL="../sliderGetPosition.vi"/>
