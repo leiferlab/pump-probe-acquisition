@@ -1,0 +1,82 @@
+
+Beispiel: Channel A auf Sinusoidal umschalten
+
+Byte 0: 77
+Byte 1: 119
+Byte 2: 83
+Byte 3: 65
+Byte 4: 91  (=Low Byte CRC)
+Byte 5: 182 (=High Byte CRC)
+
+
+Gruess, Christoph
+
+
+
+Hier meine Funktionen:
+
+CRC = 0
+
+foreach (byte currentByte in command)
+            {
+                CRC = UpdateCRC16(CRC, currentByte);
+            }
+
+
+
+UInt16 UpdateCRC16(UInt16 crc, byte a)
+        {
+            int i;
+
+            crc ^= a;
+            for (i = 0; i < 8; ++i)
+            {
+                if ((crc & 1) > 0)
+                    crc = (UInt16)((crc >> 1) ^ 0xA001);
+                else
+                    crc = (UInt16)(crc >> 1);
+            }
+
+            return crc;
+        }
+
+-- 
+Christoph Romer
+Quality Manager / CIO / Development Engineer
+Optotune AG | Bernstrasse 388 | CH-8953 Dietikon | Switzerland
+Phone +41 58 856 30 14 | Fax +41 58 856 30 01
+www.optotune.com | christoph.romer@optotune.com
+
+
+***************************************************************************************************
+
+
+CRC16 for Optotune lens driver
+For compatibility with the MODbus protocol the hi and low bytes of the CRC are swapped.
+This crc16 uses the polynom 0x8005, i.e. x^16+x^15+x^2+1
+
+sample command (change Channel A to Sinusoidal):
+
+dec:		77 119 83 65
+hex:		4d:77:53:41
+normal:		MwSA
+
+
+resulting CRC:
+91  (=Low Byte CRC)
+182 (=High Byte CRC)
+
+dec:		91 182
+hex:		5b:b6
+normal:		[¶
+'\'code:	[\B6
+
+
+
+complete command incl CRC (total 8 bytes):
+normal:		MwSA[¶
+hex:		4d:77:53:41:5b:b6
+dec:		77 119 83 65 91 182
+
+
+****************************************************************************************************
