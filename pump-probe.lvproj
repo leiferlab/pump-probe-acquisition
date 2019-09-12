@@ -35,28 +35,29 @@
 		<Item Name="basic" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="test" Type="Folder">
-				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="counterTest.vi" Type="VI" URL="../counterTest.vi"/>
 				<Item Name="csuTestResponsiveness.vi" Type="VI" URL="../csuTestResponsiveness.vi"/>
+				<Item Name="cwlaser-old.vi" Type="VI" URL="../cwlaser-old.vi"/>
+				<Item Name="dsmm-test.vi" Type="VI" URL="../dsmm-test.vi"/>
+				<Item Name="etlDynReg.vi" Type="VI" URL="../etlDynReg.vi"/>
+				<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
+				<Item Name="findAndTargetNeuronsNew.vi" Type="VI" URL="../findAndTargetNeuronsNew.vi"/>
+				<Item Name="gaussianFitTest.vi" Type="VI" URL="../gaussianFitTest.vi"/>
+				<Item Name="gaussianFitTestWithData.vi" Type="VI" URL="../gaussianFitTestWithData.vi"/>
 				<Item Name="gmmregRegistrationTest.vi" Type="VI" URL="../gmmregRegistrationTest.vi"/>
 				<Item Name="gmmregRegistrationTestLowLevel.vi" Type="VI" URL="../gmmregRegistrationTestLowLevel.vi"/>
 				<Item Name="gmmregRegistrationTestNew.vi" Type="VI" URL="../gmmregRegistrationTestNew.vi"/>
 				<Item Name="hamamatsuParameters.vi" Type="VI" URL="../hamamatsuParameters.vi"/>
 				<Item Name="hamamatsuRun.vi" Type="VI" URL="../hamamatsuRun.vi"/>
 				<Item Name="hamamatsuRunSingleVolumes.vi" Type="VI" URL="../hamamatsuRunSingleVolumes.vi"/>
+				<Item Name="hamamatsuSaveBGFrame.vi" Type="VI" URL="../hamamatsuSaveBGFrame.vi"/>
 				<Item Name="opencvFindPeakTest.vi" Type="VI" URL="../opencvFindPeakTest.vi"/>
 				<Item Name="opencvSegmentMultipleTest.vi" Type="VI" URL="../opencvSegmentMultipleTest.vi"/>
 				<Item Name="opencvSegmentTest.vi" Type="VI" URL="../opencvSegmentTest.vi"/>
+				<Item Name="piezoDoubleDynReg.vi" Type="VI" URL="../piezoDoubleDynReg.vi"/>
 				<Item Name="piezoDoubleSync.vi" Type="VI" URL="../piezoDoubleSync.vi"/>
 				<Item Name="piezoUSBWriteTest.vi" Type="VI" URL="../piezoUSBWriteTest.vi"/>
-				<Item Name="gaussianFitTest.vi" Type="VI" URL="../gaussianFitTest.vi"/>
-				<Item Name="gaussianFitTestWithData.vi" Type="VI" URL="../gaussianFitTestWithData.vi"/>
-				<Item Name="etlDynReg.vi" Type="VI" URL="../etlDynReg.vi"/>
-				<Item Name="piezoDoubleDynReg.vi" Type="VI" URL="../piezoDoubleDynReg.vi"/>
-				<Item Name="cwlaser-old.vi" Type="VI" URL="../cwlaser-old.vi"/>
-				<Item Name="findAndTargetNeurons.vi" Type="VI" URL="../findAndTargetNeurons.vi"/>
-				<Item Name="findAndTargetNeuronsNew.vi" Type="VI" URL="../findAndTargetNeuronsNew.vi"/>
-				<Item Name="hamamatsuSaveBGFrame.vi" Type="VI" URL="../hamamatsuSaveBGFrame.vi"/>
 			</Item>
 			<Item Name="acquisitionStepByStep.vi" Type="VI" URL="../acquisitionStepByStep.vi"/>
 			<Item Name="csu.vi" Type="VI" URL="../csu.vi"/>
@@ -245,6 +246,9 @@
 				<Item Name="xboxClose.vi" Type="VI" URL="../xboxClose.vi"/>
 				<Item Name="xboxOpen.vi" Type="VI" URL="../xboxOpen.vi"/>
 				<Item Name="xboxRead.vi" Type="VI" URL="../xboxRead.vi"/>
+			</Item>
+			<Item Name="subvi-dsmm" Type="Folder">
+				<Item Name="dsmm-registrationLowLevel.vi" Type="VI" URL="../dsmm-registrationLowLevel.vi"/>
 			</Item>
 			<Item Name="subvi-functionsAndFitting" Type="Folder">
 				<Item Name="fitGaussian.vi" Type="VI" URL="../fitGaussian.vi"/>

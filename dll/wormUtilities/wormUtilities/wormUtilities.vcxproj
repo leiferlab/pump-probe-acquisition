@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;WORMUTILITIES_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories> $(OPENCV_DIR)\..\..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include;C:\Users\francesco\dev\vxl\build\include\vxl\core;C:\Users\francesco\dev\vxl\build\include\vxl\vcl;C:\Users\francesco\dev\gmmreg-lw\gmmreg_lw;;C:\Users\francesco\dev\wormbrain\dsmm;;C:\Users\francesco\dev\eigen;;C:\Users\francesco\dev\boost;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -141,7 +141,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;WORMUTILITIES_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include;C:\Users\francesco\dev\vxl\build\include\vxl\core;C:\Users\francesco\dev\vxl\build\include\vxl\vcl;C:\Users\francesco\dev\gmmreg-lw</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include;C:\Users\francesco\dev\vxl\build\include\vxl\core;C:\Users\francesco\dev\vxl\build\include\vxl\vcl;C:\Users\francesco\dev\gmmreg-lw\gmmreg_lw;;C:\Users\francesco\dev\wormbrain\dsmm;;C:\Users\francesco\dev\eigen;;C:\Users\francesco\dev\boost;</AdditionalIncludeDirectories>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>
       </OmitFramePointers>
@@ -150,6 +150,7 @@
       <CallingConvention>Cdecl</CallingConvention>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <ForcedIncludeFiles>StdAfx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -166,8 +167,10 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\gmmreg-lw\gmmreg_lw.cpp" />
-    <ClCompile Include="..\..\..\..\gmmreg-lw\gmmreg_lw_ext.cpp" />
+    <ClCompile Include="..\..\..\..\gmmreg-lw\gmmreg_lw\gmmreg_lw.cpp" />
+    <ClCompile Include="..\..\..\..\gmmreg-lw\gmmreg_lw\gmmreg_lw_ext.cpp" />
+    <ClCompile Include="..\..\..\..\wormbrain\dsmm\dsmm.cpp" />
+    <ClCompile Include="..\..\..\..\wormbrain\dsmm\dsmm_utils.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

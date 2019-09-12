@@ -35,10 +35,16 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gmmreg-lw\gmmreg_lw.cpp">
+    <ClCompile Include="..\..\..\..\gmmreg-lw\gmmreg_lw\gmmreg_lw_ext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\gmmreg-lw\gmmreg_lw_ext.cpp">
+    <ClCompile Include="..\..\..\..\gmmreg-lw\gmmreg_lw\gmmreg_lw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\wormbrain\dsmm\dsmm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\wormbrain\dsmm\dsmm_utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

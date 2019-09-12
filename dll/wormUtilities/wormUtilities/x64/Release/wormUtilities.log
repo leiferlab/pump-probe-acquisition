@@ -1,7 +1,8 @@
-﻿     Creating library C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.lib and object C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.exp
+﻿  dsmm.cpp
+     Creating library C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.lib and object C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.exp
   Generating code
-  0 of 129 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  2 of 2313 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    2 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   wormUtilities.vcxproj -> C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.dll
