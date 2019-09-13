@@ -80,6 +80,7 @@
 			<Item Name="stage.vi" Type="VI" URL="../stage.vi"/>
 			<Item Name="viewAndTarget.vi" Type="VI" URL="../viewAndTarget.vi"/>
 			<Item Name="volumeOpenAndDisplay.vi" Type="VI" URL="../volumeOpenAndDisplay.vi"/>
+			<Item Name="wholeBrainImagerGreenBlue.vi" Type="VI" URL="../wholeBrainImagerGreenBlue.vi"/>
 			<Item Name="xbox.vi" Type="VI" URL="../xbox.vi"/>
 		</Item>
 		<Item Name="main" Type="Folder">
@@ -126,6 +127,9 @@
 			<Item Name="subvi-devices" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">0</Property>
 				<Item Name="subvi-devicesUtilities" Type="Folder">
+					<Item Name="cwlaserSelectorEnable.vi" Type="VI" URL="../cwlaserSelectorEnable.vi"/>
+					<Item Name="cwlaserSelectorOpen.vi" Type="VI" URL="../cwlaserSelectorOpen.vi"/>
+					<Item Name="cwlaserShutterFromWavelength.vi" Type="VI" URL="../cwlaserShutterFromWavelength.vi"/>
 					<Item Name="etlCalibration.vi" Type="VI" URL="../etlCalibration.vi"/>
 					<Item Name="etlConversion01.vi" Type="VI" URL="../etlConversion01.vi"/>
 					<Item Name="galvoGeneratePositionsGrid.vi" Type="VI" URL="../galvoGeneratePositionsGrid.vi"/>
@@ -143,6 +147,7 @@
 					<Item Name="piezoTestCalibration.vi" Type="VI" URL="../piezoTestCalibration.vi"/>
 					<Item Name="piezoTriangleWave.vi" Type="VI" URL="../piezoTriangleWave.vi"/>
 					<Item Name="remoteFocussingConversion.vi" Type="VI" URL="../remoteFocussingConversion.vi"/>
+					<Item Name="shutterGetList.vi" Type="VI" URL="../shutterGetList.vi"/>
 					<Item Name="xboxToggle.vi" Type="VI" URL="../xboxToggle.vi"/>
 				</Item>
 				<Item Name="csuClose.vi" Type="VI" URL="../csuClose.vi"/>
@@ -155,6 +160,8 @@
 				<Item Name="cwlaserOnOff.vi" Type="VI" URL="../cwlaserOnOff.vi"/>
 				<Item Name="cwlaserOpen.vi" Type="VI" URL="../cwlaserOpen.vi"/>
 				<Item Name="cwlaserSetPower.vi" Type="VI" URL="../cwlaserSetPower.vi"/>
+				<Item Name="cwlaserShutterOpenClose.vi" Type="VI" URL="../cwlaserShutterOpenClose.vi"/>
+				<Item Name="cwlaserShutterOpenOneCloseOthers.vi" Type="VI" URL="../cwlaserShutterOpenOneCloseOthers.vi"/>
 				<Item Name="daqCreateFile.vi" Type="VI" URL="../daqCreateFile.vi"/>
 				<Item Name="daqRead.vi" Type="VI" URL="../daqRead.vi"/>
 				<Item Name="daqReadEtl.vi" Type="VI" URL="../daqReadEtl.vi"/>
@@ -236,7 +243,12 @@
 				<Item Name="piezoWriteWriteFuncGen.vi" Type="VI" URL="../piezoWriteWriteFuncGen.vi"/>
 				<Item Name="piezoWriteWriteFuncGenNew.vi" Type="VI" URL="../piezoWriteWriteFuncGenNew.vi"/>
 				<Item Name="piezoWriteWriteSingleVolume.vi" Type="VI" URL="../piezoWriteWriteSingleVolume.vi"/>
+				<Item Name="shuttersClose.vi" Type="VI" URL="../shuttersClose.vi"/>
+				<Item Name="shuttersCloseShutter.vi" Type="VI" URL="../shuttersCloseShutter.vi"/>
+				<Item Name="shuttersOpen.vi" Type="VI" URL="../shuttersOpen.vi"/>
+				<Item Name="shuttersOpenShutter.vi" Type="VI" URL="../shuttersOpenShutter.vi"/>
 				<Item Name="sliderClose.vi" Type="VI" URL="../sliderClose.vi"/>
+				<Item Name="sliderFwBw.vi" Type="VI" URL="../sliderFwBw.vi"/>
 				<Item Name="sliderGetPosition.vi" Type="VI" URL="../sliderGetPosition.vi"/>
 				<Item Name="sliderMove.vi" Type="VI" URL="../sliderMove.vi"/>
 				<Item Name="sliderOpen.vi" Type="VI" URL="../sliderOpen.vi"/>
