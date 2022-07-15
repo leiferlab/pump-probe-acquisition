@@ -81,6 +81,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -141,7 +142,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;WORMUTILITIES_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include;C:\Users\francesco\dev\vxl\build\include\vxl\core;C:\Users\francesco\dev\vxl\build\include\vxl\vcl;C:\Users\francesco\dev\gmmreg-lw\gmmreg_lw;;C:\Users\francesco\dev\wormbrain\dsmm;;C:\Users\francesco\dev\eigen;;C:\Users\francesco\dev\boost;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include;C:\Users\francesco\dev\vxl\build\include\vxl\core;C:\Users\francesco\dev\vxl\build\include\vxl\vcl;C:\Users\francesco\dev\gmmreg-lw\gmmreg_lw;C:\Users\francesco\dev\wormbrain\dsmm;C:\Users\francesco\dev\include;C:\Users\francesco\dev\include\eigen\;C:\Users\francesco\dev\include\eigen\Eigen\;C:\Users\francesco\Anaconda3\include\;C:\Users\francesco\Anaconda3\Lib\site-packages\numpy\core\include\numpy</AdditionalIncludeDirectories>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>
       </OmitFramePointers>
@@ -151,14 +152,16 @@
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <ForcedIncludeFiles>StdAfx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <OpenMPSupport>true</OpenMPSupport>
+      <FloatingPointModel>Fast</FloatingPointModel>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib;C:\Users\francesco\dev\vxl\build\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_world341.lib;vnl_algo.lib;vnl.lib;v3p_netlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib;C:\Users\francesco\dev\vxl\build\lib;C:\Users\francesco\Anaconda3\libs;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world341.lib;vnl_algo.lib;vnl.lib;v3p_netlib.lib;%(AdditionalDependencies);python36.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

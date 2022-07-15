@@ -1,8 +1,12 @@
-﻿  dsmm.cpp
+﻿  wormUtilities.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\francesco\anaconda3\lib\site-packages\numpy\core\include\numpy\npy_1_7_deprecated_api.h(12): warning Msg: Using deprecated NumPy API, disable it by #defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\wormutilities.cpp(133): warning C4101: 'minY': unreferenced local variable
+c:\users\francesco\dev\pump-probe\dll\wormutilities\wormutilities\wormutilities.cpp(133): warning C4101: 'minX': unreferenced local variable
      Creating library C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.lib and object C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.exp
   Generating code
-  2 of 2313 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+  2 of 2428 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    4 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   wormUtilities.vcxproj -> C:\Users\francesco\dev\pump-probe\dll\wormUtilities\x64\Release\wormUtilities.dll

@@ -16,6 +16,8 @@ extern "C" WORMUTILITIES_API void segment_singleframe(
 	double &maxX, double &maxY, double maxXInStack, double maxYInStack,
 	float threshold, bool resize);
 
+float kthlargest(float array[], int size, int k);
+
 extern "C" WORMUTILITIES_API void segment_check2dcandidates_5planes(
 	float ArrB0[], float ArrB1[], float ArrB2[],
 	float ArrB3[], float ArrB4[], signed __int32 sizeBx, signed __int32 sizeBy,
@@ -44,11 +46,25 @@ extern "C" WORMUTILITIES_API void gmmreg_registration(
 
 extern "C" WORMUTILITIES_API void dsmm_registration(double *X, double *Y, int M, int N, int D,
 	double beta, double lambda, double neighbor_cutoff,
-	double alpha, double conv_epsilon,
+	double alpha, double gamma0,
+	double conv_epsilon, double eq_tol,
 	double *pwise_dist, double *pwise_distYY,
 	double *Gamma, double *CDE_term,
 	double *w, double *F_t, double *wF_t, double *wF_t_sum,
-	double *p, double *u,
+	double *p, double *u, int *Match,
 	double *hatP, double *hatPI_diag, double *hatPIG, double *hatPX, double *hatPIY,
 	double *G, double *W, double *GW,
 	double *sumPoverN, double *expAlphaSumPoverN);
+
+extern "C" WORMUTILITIES_API void displayImg(uint16_t* ArrA, int sizex, int sizey, int refresh_time, float* stop);
+
+extern "C" WORMUTILITIES_API uint16_t* stealPointer_uint16(uint16_t* A);
+extern "C" WORMUTILITIES_API float* stealPointer_float(float* A);
+extern "C" WORMUTILITIES_API float* stealPointer_float(float* A);
+extern "C" WORMUTILITIES_API uint16_t* allocateArray_uint16(int size);
+extern "C" WORMUTILITIES_API void deallocateArray_uint16(uint16_t* ptr);
+extern "C" WORMUTILITIES_API void writeInArray_uint16(uint16_t* src, uint16_t* dst, int size);
+
+extern "C" WORMUTILITIES_API double displayImg_py(uint16_t* ArrA, int sizex, int sizey, int refresh_time, float* stop);
+extern "C" WORMUTILITIES_API double hyperstack(uint16_t* ArrA, int shape0, int shape1, int shape2, int shape3, float* stop, float* out, int out_n, double refresh_time);
+extern "C" WORMUTILITIES_API double python_emb();
